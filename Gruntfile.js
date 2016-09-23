@@ -91,7 +91,7 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {                         // Dictionary of files
-                    'dist/sass/main.css': 'sass/*.scss'       // 'destination': 'source'
+                    'dist/main.css': 'sass/init.scss'       // 'destination': 'source'
                 }
             }
         },
@@ -128,9 +128,9 @@ module.exports = function(grunt) {
 
      //grunt.registerTask('default', ['webpack','less','cssmin']);
 
-    grunt.registerTask('sass_test', ['sass']);
+    grunt.registerTask('default', ['sass']);
 
-    grunt.registerTask('default', ['lessToSass']);
+
 
 
 

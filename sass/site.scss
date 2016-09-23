@@ -1,0 +1,36 @@
+$main_col_width: 75%;
+
+
+.site{
+  @extend .EXTENDER;
+
+  .main_col{
+    @include cell();
+    width: $main_col_width;
+
+
+    .site_header{
+      @include cell();
+      height: 50px;
+      border-bottom: dolid 1px;
+
+    }
+
+    .site_footer{
+      @include cell();
+      height: 50px;
+      background-color: red;
+    }
+
+    .site_body{
+      @include flex();
+    }
+
+
+
+
+  }
+
+}
+
+
