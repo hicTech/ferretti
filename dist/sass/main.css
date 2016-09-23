@@ -1,0 +1,137 @@
+/* 319px  */
+/* 321px  */
+/* 640px  */
+/* 641px  */
+/* 1024px  */
+/* 1025px  */
+/* 1440px  */
+/* 1441px  */
+/* 1920px  */
+/*  1921px  */
+/* grid.less */
+/*
+
+ - <div class="Grid"> 1 column full width
+ - <div class="Grid split2"> 2 colums grid
+ - <div class="Grid defaultResponsiveSplitting"> default responsive grid
+ - .custom_grid{
+        @include Grid();
+        @include splitResponsive(1,1,3,1,3,3);
+    }
+    <div class="custom_grid"> custom responsive grid
+
+
+
+
+    <div class="Grid defaultResponsiveSplitting">
+
+        <div class="Grid-item">....we.....</div>
+        <div class="Grid-item">....we.....</div>
+        <div class="Grid-item">....we.....</div>
+        <div class="Grid-item">....we.....</div>
+
+    </div>
+*/
+.Grid {
+  width: 100%;
+  margin: 0px auto;
+  overflow: auto;
+}
+.Grid > .Grid-item:first-child:nth-last-child(n+1),
+.Grid > .Grid-item:first-child:nth-last-child(n+1) ~ * {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.Grid.split1 > .Grid-item:first-child:nth-last-child(n+1),
+.Grid.split1 > .Grid-item:first-child:nth-last-child(n+1) ~ * {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.Grid.split2 > .Grid-item:first-child:nth-last-child(n+2),
+.Grid.split2 > .Grid-item:first-child:nth-last-child(n+2) ~ * {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+.Grid.split3 > .Grid-item:first-child:nth-last-child(n+3),
+.Grid.split3 > .Grid-item:first-child:nth-last-child(n+3) ~ * {
+  float: left;
+  width: 33.33333%;
+  position: relative;
+}
+@media (max-width: 19.9em) {
+  .Grid.defaultResponsiveSplitting > .Grid-item:first-child:nth-last-child(n+1),
+  .Grid.defaultResponsiveSplitting > .Grid-item:first-child:nth-last-child(n+1) ~ * {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+}
+@media (min-width: 19.9em) and (max-width: 40em) {
+  .Grid.defaultResponsiveSplitting > .Grid-item:first-child:nth-last-child(n+2),
+  .Grid.defaultResponsiveSplitting > .Grid-item:first-child:nth-last-child(n+2) ~ * {
+    float: left;
+    width: 50%;
+    position: relative;
+  }
+}
+@media (min-width: 40.001em) and (max-width: 64em) {
+  .Grid.defaultResponsiveSplitting > .Grid-item:first-child:nth-last-child(n+3),
+  .Grid.defaultResponsiveSplitting > .Grid-item:first-child:nth-last-child(n+3) ~ * {
+    float: left;
+    width: 33.33333%;
+    position: relative;
+  }
+}
+@media (min-width: 64.001em) and (max-width: 90em) {
+  .Grid.defaultResponsiveSplitting > .Grid-item:first-child:nth-last-child(n+3),
+  .Grid.defaultResponsiveSplitting > .Grid-item:first-child:nth-last-child(n+3) ~ * {
+    float: left;
+    width: 33.33333%;
+    position: relative;
+  }
+}
+@media (min-width: 90.001em) and (max-width: 120em) {
+  .Grid.defaultResponsiveSplitting > .Grid-item:first-child:nth-last-child(n+3),
+  .Grid.defaultResponsiveSplitting > .Grid-item:first-child:nth-last-child(n+3) ~ * {
+    float: left;
+    width: 33.33333%;
+    position: relative;
+  }
+}
+@media (min-width: 120.001em) {
+  .Grid.defaultResponsiveSplitting > .Grid-item:first-child:nth-last-child(n+3),
+  .Grid.defaultResponsiveSplitting > .Grid-item:first-child:nth-last-child(n+3) ~ * {
+    float: left;
+    width: 33.33333%;
+    position: relative;
+  }
+}
+@media (min-width: 19.9em) and (max-width: 40em) {
+  .Grid .customSplit > .Grid-item:first-child:nth-last-child(n+1),
+  .Grid .customSplit > .Grid-item:first-child:nth-last-child(n+1) ~ * {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+}
+@media (max-width: 19.9em) {
+  .Grid .customSplit > .Grid-item:first-child:nth-last-child(n+1),
+  .Grid .customSplit > .Grid-item:first-child:nth-last-child(n+1) ~ * {
+    float: left;
+    width: 100%;
+    position: relative;
+  }
+}
+@media (min-width: 40.001em) {
+  .Grid .customSplit > .Grid-item:first-child:nth-last-child(n+2),
+  .Grid .customSplit > .Grid-item:first-child:nth-last-child(n+2) ~ * {
+    float: left;
+    width: 50%;
+    position: relative;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

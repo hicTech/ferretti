@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>cssp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="dist/main.styles.css" media="screen">
+
+    <link rel="stylesheet" type="text/css" href="statics/css/animate.css" media="screen">
+
+    <script type="text/javascript" src="statics/js/multiple.js"></script>
+
+    <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+    <script type="text/javascript" src="js/underscore_plus/_.js"></script>
+    <script type="text/javascript" src="js/underscore_plus/_plus.js"></script>
+    <script type="text/javascript" src="js/ht/tagsManager.js"></script>
+
+</head>
+
+
+<body>
+
+
+
+     <div data-h-modules-role="dyn_module" data-h-template-name="App" data-h-module-id="App"></div>
+
+
+    <script type="text/javascript" src="js/underscore_plus/_string.js"></script>
+
+    <script>
+
+
+        solveDynModules($("body"));
+
+        setTimeout(function(){
+
+            console.time('creazione newMultiple');
+
+
+            var conf = {
+                "root" : ".App._module",
+
+                "btnsRoot" : ".AppController._module",
+                "btns" : "._ControllerButton",
+                "btnSelectedClassName" : "current",
+                "btnAddSelectedClassNameTo" : "._extender .PADDER-CENTER",
+
+                "areasRoot" : "._AppMainArea",
+                "areas": ">.EXTENDER",
+                "areaSelectedClassName" : "current",
+                "areaAddSelectedClassNameTo" : '',
+                "inEffect" : "slideInRight",
+                "outEffetc" : "slideOutLeft",
+
+                "initialArea" : 0,
+            }
+
+            newMultiple(conf);
+
+
+
+
+            console.timeEnd('creazione newMultiple');
+        },1800)
+
+
+    </script>
+
+
+</body>
+</html>
