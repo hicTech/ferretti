@@ -1,36 +1,54 @@
 $main_col_width: 75%;
+$size_text_body: 16px;
+$width_header: 100%;
+$height_header:4em;
+$width_container_header:100%;
+
+body {
+  font-size:$size_text_body ;
 
 
-.site{
-  @extend .EXTENDER;
+  .site {
+   /* @extend .EXTENDER;
 
-  .main_col{
-    @include cell();
-    width: $main_col_width;
-
-
-    .site_header{
+    .main_col {
       @include cell();
-      height: 50px;
-      border-bottom: dolid 1px;
+      width: $main_col_width;
 
+      .site_header {
+        @include cell();
+        height: 3em;
+        border-bottom: solid 1px;
+
+      }
+
+      .site_footer {
+        @include cell();
+        height: 50px;
+        background-color: red;
+      }
+
+      .site_body {
+        @include flex();
+      }
+
+    }*/
+
+    .header{
+      position: relative;
+      height:$height_header;
+      .container_header{
+        position: relative;
+        width:$width_container_header;
+        height:100%;
+        margin-right: auto;
+        margin-left: auto;
+      }
     }
-
-    .site_footer{
-      @include cell();
-      height: 50px;
-      background-color: red;
-    }
-
-    .site_body{
-      @include flex();
-    }
-
 
 
 
   }
-
 }
 
 

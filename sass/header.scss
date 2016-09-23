@@ -1,0 +1,20 @@
+$width_logo:15em;
+$width_button_header:7em;
+
+.header_wrapper {
+  @include cols();
+  .logo {
+    @include cell();
+    width: $width_logo;
+    border:1px solid black;
+  }
+  .center_header{
+    @include flex();
+    border:1px solid black;
+  }
+  .button_container_header {
+    @include cell();
+    width: $width_button_header;
+    border:1px solid black;
+  }
+}

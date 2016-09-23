@@ -1,0 +1,10 @@
+$width_slider:100%;
+$height_slider:500px;
+
+
+#slider {
+  position: relative;
+  width: $width_slider;
+  height:$height_slider ;
+  border: 1px solid black;
+}
