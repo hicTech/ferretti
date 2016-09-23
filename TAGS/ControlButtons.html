@@ -1,0 +1,201 @@
+<style rel="stylesheet/less">
+/*
+  This allows to place 2,3 or 4 buttons in the same row that fit all the available width.
+  This is useful for bottons at the and of a form, at the bottom of a modal window, in popup windows,
+  or inside a confirm box, alert and similars.
+*/
+
+
+
+.ControlButtons {
+  width: @ControlButtons-width;
+  margin: 0px auto;
+  overflow: auto;
+  padding: @ControlButtons-button-vertical-spacing 0px;
+
+  .ControlButton {
+    float: left;
+    text-align: center;
+
+    .Button {
+      margin: 0px;
+      max-width: @ControlButtons-button-max-width;
+      width: 100% - @ControlButtons-button-horizontal-spacing;
+      @media @onlyScreen and @smallmobile, @mobile {
+        width: 100% - @ControlButtons-button-horizontal-spacing-mobile;
+      }
+    }
+  }
+
+  .ControlButton:first-child:nth-last-child(n+2),
+  .ControlButton:first-child:nth-last-child(n+2) ~ * {
+    width: 50%;
+  }
+
+  .ControlButton:first-child:nth-last-child(n+3),
+  .ControlButton:first-child:nth-last-child(n+3) ~ * {
+    width: 33.33333%;
+  }
+
+  .ControlButton:first-child:nth-last-child(n+4),
+  .ControlButton:first-child:nth-last-child(n+4) ~ * {
+    width: 25%;
+  }
+
+  &.pairButtons{
+    .ControlButton{
+        width: @ControlButtons-pairButtons-button-max-width !important;
+    }
+
+    .ControlButton:last-child{
+        float: right;
+    }
+  }
+}
+
+</style>
+
+
+
+
+<div style="width: 90%; height: 90%; top: 5%; left: 5%; border: dotted 4px red; position: absolute; overflow: auto">
+
+    <div class="example_separator">ControlButtons</div>
+
+
+    <div class="ControlButtons">
+        <div class="ControlButton">
+            <button class="Button">
+                <div style="margin: 0px auto; display: table">
+                    <div class="Button-icon"><i class="Icon fa-cog"></i></div>
+                    <div class="Button-text">Config</div>
+                </div>
+            </button>
+        </div>
+
+        <div class="ControlButton">
+            <button class="Button Button-green">
+                <div style="margin: 0px auto; display: table">
+                    <div class="Button-icon"><i class="Icon fa-cog"></i></div>
+                    <div class="Button-text">Config</div>
+                </div>
+            </button>
+        </div>
+
+        <div class="ControlButton">
+            <button class="Button Button-red">
+                <div style="margin: 0px auto; display: table">
+                    <div class="Button-icon"><i class="Icon fa-cog"></i></div>
+                    <div class="Button-text">Config</div>
+                </div>
+            </button>
+        </div>
+
+        <div class="ControlButton">
+            <button class="Button Button-blue">
+                <div style="margin: 0px auto; display: table">
+                    <div class="Button-icon"><i class="Icon fa-edit"></i></div>
+                    <div class="Button-text">edit</div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="ControlButtons">
+        <div class="ControlButton">
+            <button class="Button">
+                <div style="margin: 0px auto; display: table">
+                    <div class="Button-icon"><i class="Icon fa-cog"></i></div>
+                    <div class="Button-text">Config</div>
+                </div>
+            </button>
+        </div>
+
+        <div class="ControlButton">
+            <button class="Button Button-green">
+                <div style="margin: 0px auto; display: table">
+                    <div class="Button-icon"><i class="Icon fa-cog"></i></div>
+                    <div class="Button-text">Config</div>
+                </div>
+            </button>
+        </div>
+
+        <div class="ControlButton">
+            <button class="Button Button-blue">
+                <div style="margin: 0px auto; display: table">
+                    <div class="Button-icon"><i class="Icon fa-edit"></i></div>
+                    <div class="Button-text">edit</div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="ControlButtons">
+        <div class="ControlButton">
+            <button class="Button">
+                <div style="margin: 0px auto; display: table">
+                    <div class="Button-icon"><i class="Icon fa-cog"></i></div>
+                    <div class="Button-text">Config</div>
+                </div>
+            </button>
+        </div>
+
+        <div class="ControlButton">
+            <button class="Button Button-green">
+                <div style="margin: 0px auto; display: table">
+                    <div class="Button-icon"><i class="Icon fa-cog"></i></div>
+                    <div class="Button-text">Config</div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="ControlButtons pairButtons">
+        <div class="ControlButton">
+            <button class="Button">
+                <div style="margin: 0px auto; display: table">
+                    <div class="Button-icon"><i class="Icon fa-cog"></i></div>
+                    <div class="Button-text">Config</div>
+                </div>
+            </button>
+        </div>
+
+        <div class="ControlButton">
+            <button class="Button Button-green">
+                <div style="margin: 0px auto; display: table">
+                    <div class="Button-icon"><i class="Icon fa-cog"></i></div>
+                    <div class="Button-text">Config</div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+<script>
+
+ moduleFunctions = {
+    js_on:function(opts){
+      // this                                      // ritorna l'istanza del json moduleFunctions del modulo
+      // this.$();                                 // ritorna il nodo html del modulo
+      // getModule("template_name","module_id");   // ritorna l'istanza module_id del template template_name
+      // this.opts()                               // ritorna il json delle options del modulo
+      // this.getChildModules()                    // ritorna l'array degli id dei moduli figli di primo livello
+      // this.getId()                              // ritorna l'id del modulo
+      // this.getTemplate()                        // titorna il nome del template
+      // this.createScroller()                     // cerca un .wrapper e lo rende un iScroll
+
+    }
+};
+
+</script>

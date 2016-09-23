@@ -1,0 +1,117 @@
+@import "mediaquery.scss";
+
+/* grid.less */
+$smallmobile-grid-split:      1 !default;
+$mobile-grid-split:           2 !default;
+$tablet-grid-split:           3 !default;
+$notebook-grid-split:         3 !default;
+$desktop-grid-split:          3 !default;
+$wide-grid-split:             3 !default;
+
+
+
+
+/*
+
+ - <div class="Grid"> 1 column full width
+ - <div class="Grid split2"> 2 colums grid
+ - <div class="Grid defaultResponsiveSplitting"> default responsive grid
+ - .custom_grid{
+        @include Grid();
+        @include splitResponsive(1,1,3,1,3,3);
+    }
+    <div class="custom_grid"> custom responsive grid
+
+
+
+
+    <div class="Grid defaultResponsiveSplitting">
+
+        <div class="Grid-item">....we.....</div>
+        <div class="Grid-item">....we.....</div>
+        <div class="Grid-item">....we.....</div>
+        <div class="Grid-item">....we.....</div>
+
+    </div>
+*/
+
+@mixin GridItemSplit($q){
+
+  > .Grid-item:first-child:nth-last-child(n+#{$q}),
+  > .Grid-item:first-child:nth-last-child(n+#{$q}) ~ * {
+    float: left;
+    $percentage: 100/$q !default;
+    width: unquote("#{$percentage}%");
+    position: relative;
+  }
+
+}
+
+
+@mixin splitResponsive($s:$smallmobile-grid-split, $m:$mobile-grid-split, $t:$tablet-grid-split, $n:$notebook-grid-split, $d:$desktop-grid-split, $w:$wide-grid-split){
+  @include smallmobile{
+    @include GridItemSplit($s);
+  }
+
+  @include mobile{
+    @include GridItemSplit($m);
+  }
+
+  @include tablet{
+    @include GridItemSplit($t);
+  }
+
+  @include notebook{
+    @include GridItemSplit($n);
+  }
+
+  @include desktop{
+    @include GridItemSplit($d);
+  }
+
+  @include wide{
+    @include GridItemSplit($w);
+  }
+}
+
+
+
+
+.Grid {
+  width: 100%;
+  margin: 0px auto;
+  overflow: auto;
+  @include GridItemSplit(1);
+
+
+  &.split1 {
+    @include GridItemSplit(1);
+  }
+
+  &.split2 { @include GridItemSplit(2); }
+  &.split3 { @include GridItemSplit(3); }
+
+  &.defaultResponsiveSplitting {
+    @include splitResponsive();
+  }
+
+  .customSplit {
+    @include mobile{
+      @include GridItemSplit(1);
+    }
+
+    @include smallmobile{
+      @include GridItemSplit(1);
+    }
+
+    @include tablet-and-more{
+      @include GridItemSplit(2);
+    }
+
+
+
+
+  }
+
+
+}
