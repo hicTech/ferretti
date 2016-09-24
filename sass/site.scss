@@ -4,6 +4,14 @@ $width_header: 100%;
 $height_header:4em;
 $width_container_header:100%;
 
+/* SLIDER VARIABLE */
+$width_slider:100%;
+$height_slider:30em;
+
+/* INTRO VARIABLE */
+$width_intro: 100%;
+$height_intro:30em;
+
 body {
   font-size:$size_text_body ;
 
@@ -45,6 +53,21 @@ body {
         margin-left: auto;
       }
     }
+    #slider {
+      position: relative;
+      width: $width_slider;
+      height:$height_slider ;
+      border: 1px solid black;
+    }
+    #intro {
+      position: relative;
+      width: $width_intro;
+      height:$height_intro;
+      border: 1px solid black;
+
+
+    }
+
 
 
 

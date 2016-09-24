@@ -1,0 +1,51 @@
+$golden_ratio : 1.61803398875;
+
+$height_container_button_intro: 20%;
+$height_body_intro: 80%;
+
+$width_intro_chisiamo : 61.803398874985468379271708299583%;
+$width_img_chisiamo : 38.196601125014531620728291700417%;
+
+
+
+
+.intro_wrapper{
+  @include rows();
+
+  .body_intro{
+    @include cell();
+    height:$height_body_intro;
+    border:1px solid black;
+
+    .body_intro_wrapper{
+      @include cols();
+
+      .img_chisiamo{
+        border:1px solid black;
+        width:$width_img_chisiamo;
+      }
+      .intro_chisiamo{
+        border:1px solid black;
+        width:$width_intro_chisiamo;
+      }
+    }
+  }
+  .container_button_intro{
+    @include cell();
+    height:$height_container_button_intro;
+    border:1px solid black;
+
+    .container_button_intro_wrapper{
+      @include cols(jus-center);
+
+      .button_intro{
+        border:1px solid black;
+        @include cell();
+        width: 20em;
+      }
+
+
+    }
+  }
+
+}

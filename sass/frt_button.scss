@@ -25,6 +25,7 @@ $frt_button__hover_2nd_border_color: black;
   position: absolute;
   height: $frt_button_height;
   @extend .frt_button_animation;
+  z-index: 2;
 
   &:after{
     content: "";
