@@ -79,7 +79,7 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    'dist/main.styles.css': 'dist/main.styles.css'
+                    'dist/main.min.css': 'dist/main.css'
                 }
             }
         },
@@ -128,7 +128,7 @@ module.exports = function(grunt) {
 
      //grunt.registerTask('default', ['webpack','less','cssmin']);
 
-    grunt.registerTask('default', ['sass']);
+    grunt.registerTask('default', ['sass','cssmin']);
 
 
 

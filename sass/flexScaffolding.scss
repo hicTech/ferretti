@@ -904,11 +904,15 @@ Sets a scrollable area with touch support
 */
 
 
+
+
 @mixin pxW($v){ width: #{$v+"px"} !important}
 @mixin pctW($v){ width: #{$v+"%"} !important}
 @mixin pxH($v){ height: #{$v+"px"} !important}
 @mixin pctH($v){ height: #{$v+"%"} !important}
 
+
+/*
 .ROWS >.CELL {
 
   &._5pct { @include pctH(5) } &._10pct { @include pctH(10) } &._15pct { @include pctH(15) } &._20pct { @include pctH(20) } &._25pct { @include pctH(25) } &._30pct { @include pctH(30) } &._35pct { @include pctH(35) } &._40pct { @include pctH(40) } &._45pct { @include pctH(45) } &._50pct { @include pctH(50) }
@@ -944,5 +948,7 @@ Sets a scrollable area with touch support
 
 }
 
+
+*/
 
 
