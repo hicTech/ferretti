@@ -1,8 +1,10 @@
-$main_col_width: 75%;
+
 $size_text_body: 16px;
+$width_container_header:100%;
+
+/* HEADER VARIABLE */
 $width_header: 100%;
 $height_header:4em;
-$width_container_header:100%;
 
 /* SLIDER VARIABLE */
 $width_slider:100%;
@@ -16,36 +18,64 @@ $height_intro:30em;
 $width_mission: 100%;
 $height_mission:50em;
 
+/* CAROUSEL VARIABLE */
+$width_carousel:100%;
+$height_carousel:50em;
+
+/* ARREDAMENTI VARIABLE */
+$width_arredamenti:100%;
+$height_arredamenti:50em;
+
+/* FRASI VARIABLE */
+$width_frasi:100%;
+$height_frasi:20em;
+
+/* SERVIZI VARIABLE */
+$width_servizi:100%;
+$height_servizi:25em;
+
+/* OPINIONI VARIABLE */
+$width_opinioni:100%;
+$height_opinioni:25em;
+
+
+/* REALIZZAZIONI VARIABLE */
+$width_realizzazioni:100%;
+$height_realizzazioni:77em;
+
+/* FOOTER VARIABLE */
+$height_footer:4em;
+
 
 body {
   font-size:$size_text_body ;
   margin:0px;
 
   .wrapper {
-   /* @extend .EXTENDER;
+    /* @extend .EXTENDER;
 
-    .main_col {
-      @include cell();
-      width: $main_col_width;
+     .main_col {
+       @include cell();
+       width: $main_col_width;
 
-      .site_header {
-        @include cell();
-        height: 3em;
-        border-bottom: solid 1px;
+       .site_header {
+         @include cell();
+         height: 3em;
+         border-bottom: solid 1px;
 
-      }
+       }
 
-      .site_footer {
-        @include cell();
-        height: 50px;
-        background-color: red;
-      }
+       .site_footer {
+         @include cell();
+         height: 50px;
+         background-color: red;
+       }
 
-      .site_body {
-        @include flex();
-      }
+       .site_body {
+         @include flex();
+       }
 
-    }*/
+     }*/
 
     .header{
       position: fixed;
@@ -78,6 +108,48 @@ body {
       width: $width_mission;
       height:$height_mission;
       border: 1px solid green;
+    }
+    #carousel{
+      position: relative;
+      width: $width_carousel;
+      height:$height_carousel;
+      border: 1px solid red;
+    }
+    #arredamenti{
+      position: relative;
+      width: $width_arredamenti;
+      height: $height_arredamenti;
+      border: 1px solid blue;
+    }
+    #servizi{
+      position: relative;
+      width: $width_servizi;
+      height: $height_servizi;
+      border: 1px solid green;
+    }
+    #frasi{
+      position: relative;
+      width: $width_frasi;
+      height: $height_frasi;
+      border: 1px solid red;
+    }
+    #opinioni{
+      position: relative;
+      width: $width_opinioni;
+      height: $height_opinioni;
+      border: 1px solid blue;
+    }
+    #realizzazioni{
+      position: relative;
+      width: $width_realizzazioni;
+      height: $height_realizzazioni;
+      border: 1px solid green;
+    }
+    .footer{
+      position: relative;
+      height:$height_footer;
+      width: 100%;
+      background-color: #c2c45d;
     }
 
 

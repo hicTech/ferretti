@@ -192,7 +192,7 @@ Establishes the main-axis, thus defining the direction flex items are placed in 
 --------------------------------------------------------------------
 */
 /*-------------------------- browsers abbreviations */
-.COLS, .header_wrapper, .intro_wrapper .body_intro .body_intro_wrapper, .intro_wrapper .container_button_intro .container_button_intro_wrapper, .mission_wrapper {
+.COLS, .header_wrapper, .intro_wrapper .body_intro .body_intro_wrapper, .intro_wrapper .container_button_intro .container_button_intro_wrapper, .mission_wrapper, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper, .container_footer .footer_wrapper {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -217,7 +217,7 @@ Establishes the main-axis, thus defining the direction flex items are placed in 
   /* cross-axis */
 }
 
-.COLS.REVERSE, .REVERSE.header_wrapper, .intro_wrapper .body_intro .REVERSE.body_intro_wrapper, .intro_wrapper .container_button_intro .REVERSE.container_button_intro_wrapper, .REVERSE.mission_wrapper {
+.COLS.REVERSE, .REVERSE.header_wrapper, .intro_wrapper .body_intro .REVERSE.body_intro_wrapper, .intro_wrapper .container_button_intro .REVERSE.container_button_intro_wrapper, .REVERSE.mission_wrapper, .realizzazioni_wrapper .container_costruz .REVERSE.container_costruz_wrapper, .realizzazioni_wrapper .container_nuove .REVERSE.container_nuove_wrapper, .container_footer .REVERSE.footer_wrapper {
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
@@ -225,7 +225,7 @@ Establishes the main-axis, thus defining the direction flex items are placed in 
   -moz-box-orient: horizontal;
 }
 
-.ROWS, .intro_wrapper, .mission_wrapper .mission_left .mission_left_wrapper, .mission_wrapper .mission_right .mission_right_wrapper {
+.ROWS, .intro_wrapper, .mission_wrapper .mission_left .mission_left_wrapper, .mission_wrapper .mission_right .mission_right_wrapper, .realizzazioni_wrapper {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -250,7 +250,7 @@ Establishes the main-axis, thus defining the direction flex items are placed in 
   /* cross-axis */
 }
 
-.ROWS.REVERSE, .REVERSE.intro_wrapper, .mission_wrapper .mission_left .REVERSE.mission_left_wrapper, .mission_wrapper .mission_right .REVERSE.mission_right_wrapper {
+.ROWS.REVERSE, .REVERSE.intro_wrapper, .mission_wrapper .mission_left .REVERSE.mission_left_wrapper, .mission_wrapper .mission_right .REVERSE.mission_right_wrapper, .REVERSE.realizzazioni_wrapper {
   -webkit-flex-direction: column-reverse;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
@@ -289,31 +289,37 @@ leave free from its siblings) and they would be justified
 
 --------------------------------------------------------------------
 */
-.ROWS.JUS-CENTER, .JUS-CENTER.intro_wrapper, .mission_wrapper .mission_left .JUS-CENTER.mission_left_wrapper, .mission_wrapper .mission_right .JUS-CENTER.mission_right_wrapper,
+.ROWS.JUS-CENTER, .JUS-CENTER.intro_wrapper, .mission_wrapper .mission_left .JUS-CENTER.mission_left_wrapper, .mission_wrapper .mission_right .JUS-CENTER.mission_right_wrapper, .JUS-CENTER.realizzazioni_wrapper,
 .COLS.JUS-CENTER,
 .JUS-CENTER.header_wrapper,
 .intro_wrapper .body_intro .JUS-CENTER.body_intro_wrapper,
 .intro_wrapper .container_button_intro .container_button_intro_wrapper,
-.JUS-CENTER.mission_wrapper {
+.JUS-CENTER.mission_wrapper,
+.realizzazioni_wrapper .container_costruz .JUS-CENTER.container_costruz_wrapper,
+.realizzazioni_wrapper .container_nuove .JUS-CENTER.container_nuove_wrapper,
+.container_footer .JUS-CENTER.footer_wrapper {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-pack: center;
 }
 
-.ROWS.JUS-END, .JUS-END.intro_wrapper, .mission_wrapper .mission_left .JUS-END.mission_left_wrapper, .mission_wrapper .mission_right .JUS-END.mission_right_wrapper,
+.ROWS.JUS-END, .JUS-END.intro_wrapper, .mission_wrapper .mission_left .JUS-END.mission_left_wrapper, .mission_wrapper .mission_right .JUS-END.mission_right_wrapper, .JUS-END.realizzazioni_wrapper,
 .COLS.JUS-END,
 .JUS-END.header_wrapper,
 .intro_wrapper .body_intro .JUS-END.body_intro_wrapper,
 .intro_wrapper .container_button_intro .JUS-END.container_button_intro_wrapper,
-.JUS-END.mission_wrapper {
+.JUS-END.mission_wrapper,
+.realizzazioni_wrapper .container_costruz .JUS-END.container_costruz_wrapper,
+.realizzazioni_wrapper .container_nuove .JUS-END.container_nuove_wrapper,
+.container_footer .JUS-END.footer_wrapper {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   -webkit-box-pack: end;
 }
 
-.ROWS.JUS-AROUND, .JUS-AROUND.intro_wrapper, .mission_wrapper .mission_left .JUS-AROUND.mission_left_wrapper, .mission_wrapper .mission_right .JUS-AROUND.mission_right_wrapper {
+.ROWS.JUS-AROUND, .JUS-AROUND.intro_wrapper, .mission_wrapper .mission_left .JUS-AROUND.mission_left_wrapper, .mission_wrapper .mission_right .JUS-AROUND.mission_right_wrapper, .JUS-AROUND.realizzazioni_wrapper {
   /* partial supported: IE 10+, safari 6.1+, FF 22+, GC 21+, Opera 12.12+, iOs 7+, Android 5.1+ */
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
@@ -321,7 +327,7 @@ leave free from its siblings) and they would be justified
   -webkit-box-pack: distribute;
 }
 
-.COLS.JUS-AROUND, .JUS-AROUND.header_wrapper, .intro_wrapper .body_intro .JUS-AROUND.body_intro_wrapper, .intro_wrapper .container_button_intro .JUS-AROUND.container_button_intro_wrapper, .JUS-AROUND.mission_wrapper {
+.COLS.JUS-AROUND, .JUS-AROUND.header_wrapper, .intro_wrapper .body_intro .JUS-AROUND.body_intro_wrapper, .intro_wrapper .container_button_intro .JUS-AROUND.container_button_intro_wrapper, .JUS-AROUND.mission_wrapper, .realizzazioni_wrapper .container_costruz .JUS-AROUND.container_costruz_wrapper, .realizzazioni_wrapper .container_nuove .JUS-AROUND.container_nuove_wrapper, .container_footer .JUS-AROUND.footer_wrapper {
   /* partial supported: IE 10+, safari 6.1+, FF 22+, GC 21+, Opera 12.12+, iOs 7+, Android 5.1+ */
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
@@ -329,7 +335,7 @@ leave free from its siblings) and they would be justified
   -webkit-box-pack: distribute;
 }
 
-.ROWS.JUS-BETWEEN, .JUS-BETWEEN.intro_wrapper, .mission_wrapper .mission_left .JUS-BETWEEN.mission_left_wrapper, .mission_wrapper .mission_right .JUS-BETWEEN.mission_right_wrapper {
+.ROWS.JUS-BETWEEN, .JUS-BETWEEN.intro_wrapper, .mission_wrapper .mission_left .JUS-BETWEEN.mission_left_wrapper, .mission_wrapper .mission_right .JUS-BETWEEN.mission_right_wrapper, .JUS-BETWEEN.realizzazioni_wrapper {
   /* partial support:  FF 22+ */
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -337,7 +343,7 @@ leave free from its siblings) and they would be justified
   -webkit-box-pack: justify;
 }
 
-.COLS.JUS-BETWEEN, .JUS-BETWEEN.header_wrapper, .intro_wrapper .body_intro .JUS-BETWEEN.body_intro_wrapper, .intro_wrapper .container_button_intro .JUS-BETWEEN.container_button_intro_wrapper, .JUS-BETWEEN.mission_wrapper {
+.COLS.JUS-BETWEEN, .JUS-BETWEEN.header_wrapper, .intro_wrapper .body_intro .JUS-BETWEEN.body_intro_wrapper, .intro_wrapper .container_button_intro .JUS-BETWEEN.container_button_intro_wrapper, .JUS-BETWEEN.mission_wrapper, .realizzazioni_wrapper .container_costruz .JUS-BETWEEN.container_costruz_wrapper, .realizzazioni_wrapper .container_nuove .JUS-BETWEEN.container_nuove_wrapper, .container_footer .JUS-BETWEEN.footer_wrapper {
   /* partial support:  FF 22+ */
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -361,12 +367,15 @@ available space (height for .COLS and width for .ROWS)
 
 --------------------------------------------------------------------
 */
-.ROWS.END, .END.intro_wrapper, .mission_wrapper .mission_left .END.mission_left_wrapper, .mission_wrapper .mission_right .END.mission_right_wrapper,
+.ROWS.END, .END.intro_wrapper, .mission_wrapper .mission_left .END.mission_left_wrapper, .mission_wrapper .mission_right .END.mission_right_wrapper, .END.realizzazioni_wrapper,
 .COLS.END,
 .END.header_wrapper,
 .intro_wrapper .body_intro .END.body_intro_wrapper,
 .intro_wrapper .container_button_intro .END.container_button_intro_wrapper,
-.END.mission_wrapper {
+.END.mission_wrapper,
+.realizzazioni_wrapper .container_costruz .END.container_costruz_wrapper,
+.realizzazioni_wrapper .container_nuove .END.container_nuove_wrapper,
+.container_footer .END.footer_wrapper {
   /* partial support: IE 10+, safari 6.1+, FF 22+, GC 21+, Opera 12.12+, iOs 7+, Android 4.4+  */
   -webkit-align: flex-end;
   -ms-flex-align: flex-end;
@@ -374,12 +383,15 @@ available space (height for .COLS and width for .ROWS)
   align-items: end;
 }
 
-.ROWS.CENTER, .CENTER.intro_wrapper, .mission_wrapper .mission_left .CENTER.mission_left_wrapper, .mission_wrapper .mission_right .CENTER.mission_right_wrapper,
+.ROWS.CENTER, .CENTER.intro_wrapper, .mission_wrapper .mission_left .CENTER.mission_left_wrapper, .mission_wrapper .mission_right .CENTER.mission_right_wrapper, .CENTER.realizzazioni_wrapper,
 .COLS.CENTER,
 .CENTER.header_wrapper,
 .intro_wrapper .body_intro .CENTER.body_intro_wrapper,
 .intro_wrapper .container_button_intro .CENTER.container_button_intro_wrapper,
-.CENTER.mission_wrapper {
+.CENTER.mission_wrapper,
+.realizzazioni_wrapper .container_costruz .CENTER.container_costruz_wrapper,
+.realizzazioni_wrapper .container_nuove .CENTER.container_nuove_wrapper,
+.container_footer .CENTER.footer_wrapper {
   /* partial support: IE 10+, safari 6.1+, FF 22+, GC 21+, Opera 12.12+, iOs 7+, Android 4.4+  */
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -387,12 +399,15 @@ available space (height for .COLS and width for .ROWS)
   align-items: center;
 }
 
-.ROWS.STRETCH, .STRETCH.intro_wrapper, .mission_wrapper .mission_left .STRETCH.mission_left_wrapper, .mission_wrapper .mission_right .STRETCH.mission_right_wrapper,
+.ROWS.STRETCH, .STRETCH.intro_wrapper, .mission_wrapper .mission_left .STRETCH.mission_left_wrapper, .mission_wrapper .mission_right .STRETCH.mission_right_wrapper, .STRETCH.realizzazioni_wrapper,
 .COLS.STRETCH,
 .STRETCH.header_wrapper,
 .intro_wrapper .body_intro .STRETCH.body_intro_wrapper,
 .intro_wrapper .container_button_intro .STRETCH.container_button_intro_wrapper,
-.STRETCH.mission_wrapper {
+.STRETCH.mission_wrapper,
+.realizzazioni_wrapper .container_costruz .STRETCH.container_costruz_wrapper,
+.realizzazioni_wrapper .container_nuove .STRETCH.container_nuove_wrapper,
+.container_footer .STRETCH.footer_wrapper {
   /* partial support: IE 10+, safari 6.1+, FF 22+, GC 21+, Opera 12.12+, iOs 7+, Android 4.4+  */
   -webkit-align: stretch;
   -ms-flex-align: stretch;
@@ -400,12 +415,15 @@ available space (height for .COLS and width for .ROWS)
   align-items: stretch;
 }
 
-.ROWS.BASELINE, .BASELINE.intro_wrapper, .mission_wrapper .mission_left .BASELINE.mission_left_wrapper, .mission_wrapper .mission_right .BASELINE.mission_right_wrapper,
+.ROWS.BASELINE, .BASELINE.intro_wrapper, .mission_wrapper .mission_left .BASELINE.mission_left_wrapper, .mission_wrapper .mission_right .BASELINE.mission_right_wrapper, .BASELINE.realizzazioni_wrapper,
 .COLS.BASELINE,
 .BASELINE.header_wrapper,
 .intro_wrapper .body_intro .BASELINE.body_intro_wrapper,
 .intro_wrapper .container_button_intro .BASELINE.container_button_intro_wrapper,
-.BASELINE.mission_wrapper {
+.BASELINE.mission_wrapper,
+.realizzazioni_wrapper .container_costruz .BASELINE.container_costruz_wrapper,
+.realizzazioni_wrapper .container_nuove .BASELINE.container_nuove_wrapper,
+.container_footer .BASELINE.footer_wrapper {
   /* partial support: IE 10+, safari 6.1+, FF 22+, GC 21+, Opera 12.12+, iOs 7+, Android 4.4+  */
   -webkit-align: baseline;
   -ms-flex-align: baseline;
@@ -442,7 +460,7 @@ If father is .ROWS
 
 --------------------------------------------------------------------
 */
-.CELL, .header_wrapper .logo, .header_wrapper .center_header, .header_wrapper .button_container_header, .intro_wrapper .body_intro, .intro_wrapper .container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .button_intro, .mission_wrapper .mission_left, .mission_wrapper .mission_left .mission_left_wrapper .mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .mission_left_foot, .mission_wrapper .mission_right, .mission_wrapper .mission_right .mission_right_wrapper .mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .mission_right_foot {
+.CELL, .header_wrapper .logo, .header_wrapper .center_header, .header_wrapper .button_container_header, .intro_wrapper .body_intro, .intro_wrapper .container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .button_intro, .mission_wrapper .mission_left, .mission_wrapper .mission_left .mission_left_wrapper .mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .mission_left_foot, .mission_wrapper .mission_right, .mission_wrapper .mission_right .mission_right_wrapper .mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .mission_right_foot, .realizzazioni_wrapper .container_titolo_realizzazioni, .realizzazioni_wrapper .container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .costruz_right, .realizzazioni_wrapper .container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .nuove_right, .container_footer .footer_wrapper .label, .container_footer .footer_wrapper .content_tel, .container_footer .footer_wrapper .content_email, .container_footer .footer_wrapper .flex, .container_footer .footer_wrapper .chiudi {
   position: relative;
   overflow: hidden;
   -webkit-box-ordinal-group: none;
@@ -463,7 +481,7 @@ If father is .ROWS
   align-self: auto;
 }
 
-.CELL._FLEX, .header_wrapper ._FLEX.logo, .header_wrapper .center_header, .header_wrapper ._FLEX.button_container_header, .intro_wrapper ._FLEX.body_intro, .intro_wrapper ._FLEX.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._FLEX.button_intro, .mission_wrapper ._FLEX.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX.mission_left_foot, .mission_wrapper ._FLEX.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX.mission_right_foot {
+.CELL._FLEX, .header_wrapper ._FLEX.logo, .header_wrapper .center_header, .header_wrapper ._FLEX.button_container_header, .intro_wrapper ._FLEX.body_intro, .intro_wrapper ._FLEX.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._FLEX.button_intro, .mission_wrapper ._FLEX.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX.mission_left_foot, .mission_wrapper ._FLEX.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX.mission_right_foot, .realizzazioni_wrapper ._FLEX.container_titolo_realizzazioni, .realizzazioni_wrapper ._FLEX.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._FLEX.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._FLEX.costruz_right, .realizzazioni_wrapper ._FLEX.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._FLEX.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._FLEX.nuove_right, .container_footer .footer_wrapper ._FLEX.label, .container_footer .footer_wrapper ._FLEX.content_tel, .container_footer .footer_wrapper ._FLEX.content_email, .container_footer .footer_wrapper .flex, .container_footer .footer_wrapper ._FLEX.chiudi {
   /* Old Syntax */
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -475,7 +493,7 @@ If father is .ROWS
   width: auto;
 }
 
-.CELL._FLEX1, .header_wrapper ._FLEX1.logo, .header_wrapper ._FLEX1.center_header, .header_wrapper ._FLEX1.button_container_header, .intro_wrapper ._FLEX1.body_intro, .intro_wrapper ._FLEX1.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._FLEX1.button_intro, .mission_wrapper ._FLEX1.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX1.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX1.mission_left_foot, .mission_wrapper ._FLEX1.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX1.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX1.mission_right_foot {
+.CELL._FLEX1, .header_wrapper ._FLEX1.logo, .header_wrapper ._FLEX1.center_header, .header_wrapper ._FLEX1.button_container_header, .intro_wrapper ._FLEX1.body_intro, .intro_wrapper ._FLEX1.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._FLEX1.button_intro, .mission_wrapper ._FLEX1.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX1.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX1.mission_left_foot, .mission_wrapper ._FLEX1.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX1.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX1.mission_right_foot, .realizzazioni_wrapper ._FLEX1.container_titolo_realizzazioni, .realizzazioni_wrapper ._FLEX1.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._FLEX1.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._FLEX1.costruz_right, .realizzazioni_wrapper ._FLEX1.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._FLEX1.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._FLEX1.nuove_right, .container_footer .footer_wrapper ._FLEX1.label, .container_footer .footer_wrapper ._FLEX1.content_tel, .container_footer .footer_wrapper ._FLEX1.content_email, .container_footer .footer_wrapper ._FLEX1.flex, .container_footer .footer_wrapper ._FLEX1.chiudi {
   /* Old Syntax */
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
@@ -487,7 +505,7 @@ If father is .ROWS
   width: auto;
 }
 
-.CELL._FLEX2, .header_wrapper ._FLEX2.logo, .header_wrapper ._FLEX2.center_header, .header_wrapper ._FLEX2.button_container_header, .intro_wrapper ._FLEX2.body_intro, .intro_wrapper ._FLEX2.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._FLEX2.button_intro, .mission_wrapper ._FLEX2.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX2.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX2.mission_left_foot, .mission_wrapper ._FLEX2.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX2.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX2.mission_right_foot {
+.CELL._FLEX2, .header_wrapper ._FLEX2.logo, .header_wrapper ._FLEX2.center_header, .header_wrapper ._FLEX2.button_container_header, .intro_wrapper ._FLEX2.body_intro, .intro_wrapper ._FLEX2.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._FLEX2.button_intro, .mission_wrapper ._FLEX2.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX2.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX2.mission_left_foot, .mission_wrapper ._FLEX2.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX2.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX2.mission_right_foot, .realizzazioni_wrapper ._FLEX2.container_titolo_realizzazioni, .realizzazioni_wrapper ._FLEX2.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._FLEX2.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._FLEX2.costruz_right, .realizzazioni_wrapper ._FLEX2.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._FLEX2.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._FLEX2.nuove_right, .container_footer .footer_wrapper ._FLEX2.label, .container_footer .footer_wrapper ._FLEX2.content_tel, .container_footer .footer_wrapper ._FLEX2.content_email, .container_footer .footer_wrapper ._FLEX2.flex, .container_footer .footer_wrapper ._FLEX2.chiudi {
   /* Old Syntax */
   -webkit-box-flex: 2;
   -moz-box-flex: 2;
@@ -499,7 +517,7 @@ If father is .ROWS
   width: auto;
 }
 
-.CELL._FLEX3, .header_wrapper ._FLEX3.logo, .header_wrapper ._FLEX3.center_header, .header_wrapper ._FLEX3.button_container_header, .intro_wrapper ._FLEX3.body_intro, .intro_wrapper ._FLEX3.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._FLEX3.button_intro, .mission_wrapper ._FLEX3.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX3.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX3.mission_left_foot, .mission_wrapper ._FLEX3.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX3.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX3.mission_right_foot {
+.CELL._FLEX3, .header_wrapper ._FLEX3.logo, .header_wrapper ._FLEX3.center_header, .header_wrapper ._FLEX3.button_container_header, .intro_wrapper ._FLEX3.body_intro, .intro_wrapper ._FLEX3.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._FLEX3.button_intro, .mission_wrapper ._FLEX3.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX3.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX3.mission_left_foot, .mission_wrapper ._FLEX3.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX3.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX3.mission_right_foot, .realizzazioni_wrapper ._FLEX3.container_titolo_realizzazioni, .realizzazioni_wrapper ._FLEX3.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._FLEX3.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._FLEX3.costruz_right, .realizzazioni_wrapper ._FLEX3.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._FLEX3.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._FLEX3.nuove_right, .container_footer .footer_wrapper ._FLEX3.label, .container_footer .footer_wrapper ._FLEX3.content_tel, .container_footer .footer_wrapper ._FLEX3.content_email, .container_footer .footer_wrapper ._FLEX3.flex, .container_footer .footer_wrapper ._FLEX3.chiudi {
   /* Old Syntax */
   -webkit-box-flex: 3;
   -moz-box-flex: 3;
@@ -511,7 +529,7 @@ If father is .ROWS
   width: auto;
 }
 
-.CELL._FLEX4, .header_wrapper ._FLEX4.logo, .header_wrapper ._FLEX4.center_header, .header_wrapper ._FLEX4.button_container_header, .intro_wrapper ._FLEX4.body_intro, .intro_wrapper ._FLEX4.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._FLEX4.button_intro, .mission_wrapper ._FLEX4.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX4.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX4.mission_left_foot, .mission_wrapper ._FLEX4.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX4.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX4.mission_right_foot {
+.CELL._FLEX4, .header_wrapper ._FLEX4.logo, .header_wrapper ._FLEX4.center_header, .header_wrapper ._FLEX4.button_container_header, .intro_wrapper ._FLEX4.body_intro, .intro_wrapper ._FLEX4.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._FLEX4.button_intro, .mission_wrapper ._FLEX4.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX4.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX4.mission_left_foot, .mission_wrapper ._FLEX4.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX4.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX4.mission_right_foot, .realizzazioni_wrapper ._FLEX4.container_titolo_realizzazioni, .realizzazioni_wrapper ._FLEX4.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._FLEX4.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._FLEX4.costruz_right, .realizzazioni_wrapper ._FLEX4.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._FLEX4.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._FLEX4.nuove_right, .container_footer .footer_wrapper ._FLEX4.label, .container_footer .footer_wrapper ._FLEX4.content_tel, .container_footer .footer_wrapper ._FLEX4.content_email, .container_footer .footer_wrapper ._FLEX4.flex, .container_footer .footer_wrapper ._FLEX4.chiudi {
   /* Old Syntax */
   -webkit-box-flex: 4;
   -moz-box-flex: 4;
@@ -523,7 +541,7 @@ If father is .ROWS
   width: auto;
 }
 
-.CELL._FLEX5, .header_wrapper ._FLEX5.logo, .header_wrapper ._FLEX5.center_header, .header_wrapper ._FLEX5.button_container_header, .intro_wrapper ._FLEX5.body_intro, .intro_wrapper ._FLEX5.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._FLEX5.button_intro, .mission_wrapper ._FLEX5.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX5.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX5.mission_left_foot, .mission_wrapper ._FLEX5.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX5.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX5.mission_right_foot {
+.CELL._FLEX5, .header_wrapper ._FLEX5.logo, .header_wrapper ._FLEX5.center_header, .header_wrapper ._FLEX5.button_container_header, .intro_wrapper ._FLEX5.body_intro, .intro_wrapper ._FLEX5.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._FLEX5.button_intro, .mission_wrapper ._FLEX5.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX5.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._FLEX5.mission_left_foot, .mission_wrapper ._FLEX5.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX5.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._FLEX5.mission_right_foot, .realizzazioni_wrapper ._FLEX5.container_titolo_realizzazioni, .realizzazioni_wrapper ._FLEX5.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._FLEX5.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._FLEX5.costruz_right, .realizzazioni_wrapper ._FLEX5.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._FLEX5.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._FLEX5.nuove_right, .container_footer .footer_wrapper ._FLEX5.label, .container_footer .footer_wrapper ._FLEX5.content_tel, .container_footer .footer_wrapper ._FLEX5.content_email, .container_footer .footer_wrapper ._FLEX5.flex, .container_footer .footer_wrapper ._FLEX5.chiudi {
   /* Old Syntax */
   -webkit-box-flex: 5;
   -moz-box-flex: 5;
@@ -535,37 +553,37 @@ If father is .ROWS
   width: auto;
 }
 
-.CELL._ORD0, .header_wrapper ._ORD0.logo, .header_wrapper ._ORD0.center_header, .header_wrapper ._ORD0.button_container_header, .intro_wrapper ._ORD0.body_intro, .intro_wrapper ._ORD0.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._ORD0.button_intro, .mission_wrapper ._ORD0.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._ORD0.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._ORD0.mission_left_foot, .mission_wrapper ._ORD0.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._ORD0.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._ORD0.mission_right_foot {
+.CELL._ORD0, .header_wrapper ._ORD0.logo, .header_wrapper ._ORD0.center_header, .header_wrapper ._ORD0.button_container_header, .intro_wrapper ._ORD0.body_intro, .intro_wrapper ._ORD0.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._ORD0.button_intro, .mission_wrapper ._ORD0.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._ORD0.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._ORD0.mission_left_foot, .mission_wrapper ._ORD0.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._ORD0.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._ORD0.mission_right_foot, .realizzazioni_wrapper ._ORD0.container_titolo_realizzazioni, .realizzazioni_wrapper ._ORD0.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._ORD0.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._ORD0.costruz_right, .realizzazioni_wrapper ._ORD0.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._ORD0.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._ORD0.nuove_right, .container_footer .footer_wrapper ._ORD0.label, .container_footer .footer_wrapper ._ORD0.content_tel, .container_footer .footer_wrapper ._ORD0.content_email, .container_footer .footer_wrapper ._ORD0.flex, .container_footer .footer_wrapper ._ORD0.chiudi {
   -webkit-order: 0 !important;
   -ms-flex-order: 0 !important;
   order: 0 !important;
 }
 
-.CELL._ORD1, .header_wrapper ._ORD1.logo, .header_wrapper ._ORD1.center_header, .header_wrapper ._ORD1.button_container_header, .intro_wrapper ._ORD1.body_intro, .intro_wrapper ._ORD1.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._ORD1.button_intro, .mission_wrapper ._ORD1.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._ORD1.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._ORD1.mission_left_foot, .mission_wrapper ._ORD1.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._ORD1.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._ORD1.mission_right_foot {
+.CELL._ORD1, .header_wrapper ._ORD1.logo, .header_wrapper ._ORD1.center_header, .header_wrapper ._ORD1.button_container_header, .intro_wrapper ._ORD1.body_intro, .intro_wrapper ._ORD1.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._ORD1.button_intro, .mission_wrapper ._ORD1.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._ORD1.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._ORD1.mission_left_foot, .mission_wrapper ._ORD1.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._ORD1.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._ORD1.mission_right_foot, .realizzazioni_wrapper ._ORD1.container_titolo_realizzazioni, .realizzazioni_wrapper ._ORD1.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._ORD1.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._ORD1.costruz_right, .realizzazioni_wrapper ._ORD1.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._ORD1.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._ORD1.nuove_right, .container_footer .footer_wrapper ._ORD1.label, .container_footer .footer_wrapper ._ORD1.content_tel, .container_footer .footer_wrapper ._ORD1.content_email, .container_footer .footer_wrapper ._ORD1.flex, .container_footer .footer_wrapper ._ORD1.chiudi {
   -webkit-order: 1 !important;
   -ms-flex-order: 1 !important;
   order: 1 !important;
 }
 
-.CELL._ORD2, .header_wrapper ._ORD2.logo, .header_wrapper ._ORD2.center_header, .header_wrapper ._ORD2.button_container_header, .intro_wrapper ._ORD2.body_intro, .intro_wrapper ._ORD2.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._ORD2.button_intro, .mission_wrapper ._ORD2.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._ORD2.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._ORD2.mission_left_foot, .mission_wrapper ._ORD2.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._ORD2.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._ORD2.mission_right_foot {
+.CELL._ORD2, .header_wrapper ._ORD2.logo, .header_wrapper ._ORD2.center_header, .header_wrapper ._ORD2.button_container_header, .intro_wrapper ._ORD2.body_intro, .intro_wrapper ._ORD2.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._ORD2.button_intro, .mission_wrapper ._ORD2.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._ORD2.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._ORD2.mission_left_foot, .mission_wrapper ._ORD2.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._ORD2.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._ORD2.mission_right_foot, .realizzazioni_wrapper ._ORD2.container_titolo_realizzazioni, .realizzazioni_wrapper ._ORD2.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._ORD2.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._ORD2.costruz_right, .realizzazioni_wrapper ._ORD2.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._ORD2.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._ORD2.nuove_right, .container_footer .footer_wrapper ._ORD2.label, .container_footer .footer_wrapper ._ORD2.content_tel, .container_footer .footer_wrapper ._ORD2.content_email, .container_footer .footer_wrapper ._ORD2.flex, .container_footer .footer_wrapper ._ORD2.chiudi {
   -webkit-order: 2 !important;
   -ms-flex-order: 2 !important;
   order: 2 !important;
 }
 
-.CELL._ORD3, .header_wrapper ._ORD3.logo, .header_wrapper ._ORD3.center_header, .header_wrapper ._ORD3.button_container_header, .intro_wrapper ._ORD3.body_intro, .intro_wrapper ._ORD3.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._ORD3.button_intro, .mission_wrapper ._ORD3.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._ORD3.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._ORD3.mission_left_foot, .mission_wrapper ._ORD3.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._ORD3.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._ORD3.mission_right_foot {
+.CELL._ORD3, .header_wrapper ._ORD3.logo, .header_wrapper ._ORD3.center_header, .header_wrapper ._ORD3.button_container_header, .intro_wrapper ._ORD3.body_intro, .intro_wrapper ._ORD3.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._ORD3.button_intro, .mission_wrapper ._ORD3.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._ORD3.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._ORD3.mission_left_foot, .mission_wrapper ._ORD3.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._ORD3.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._ORD3.mission_right_foot, .realizzazioni_wrapper ._ORD3.container_titolo_realizzazioni, .realizzazioni_wrapper ._ORD3.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._ORD3.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._ORD3.costruz_right, .realizzazioni_wrapper ._ORD3.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._ORD3.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._ORD3.nuove_right, .container_footer .footer_wrapper ._ORD3.label, .container_footer .footer_wrapper ._ORD3.content_tel, .container_footer .footer_wrapper ._ORD3.content_email, .container_footer .footer_wrapper ._ORD3.flex, .container_footer .footer_wrapper ._ORD3.chiudi {
   -webkit-order: 3 !important;
   -ms-flex-order: 3 !important;
   order: 3 !important;
 }
 
-.CELL._ORD4, .header_wrapper ._ORD4.logo, .header_wrapper ._ORD4.center_header, .header_wrapper ._ORD4.button_container_header, .intro_wrapper ._ORD4.body_intro, .intro_wrapper ._ORD4.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._ORD4.button_intro, .mission_wrapper ._ORD4.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._ORD4.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._ORD4.mission_left_foot, .mission_wrapper ._ORD4.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._ORD4.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._ORD4.mission_right_foot {
+.CELL._ORD4, .header_wrapper ._ORD4.logo, .header_wrapper ._ORD4.center_header, .header_wrapper ._ORD4.button_container_header, .intro_wrapper ._ORD4.body_intro, .intro_wrapper ._ORD4.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._ORD4.button_intro, .mission_wrapper ._ORD4.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._ORD4.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._ORD4.mission_left_foot, .mission_wrapper ._ORD4.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._ORD4.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._ORD4.mission_right_foot, .realizzazioni_wrapper ._ORD4.container_titolo_realizzazioni, .realizzazioni_wrapper ._ORD4.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._ORD4.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._ORD4.costruz_right, .realizzazioni_wrapper ._ORD4.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._ORD4.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._ORD4.nuove_right, .container_footer .footer_wrapper ._ORD4.label, .container_footer .footer_wrapper ._ORD4.content_tel, .container_footer .footer_wrapper ._ORD4.content_email, .container_footer .footer_wrapper ._ORD4.flex, .container_footer .footer_wrapper ._ORD4.chiudi {
   -webkit-order: 4 !important;
   -ms-flex-order: 4 !important;
   order: 4 !important;
 }
 
-.CELL._ORD5, .header_wrapper ._ORD5.logo, .header_wrapper ._ORD5.center_header, .header_wrapper ._ORD5.button_container_header, .intro_wrapper ._ORD5.body_intro, .intro_wrapper ._ORD5.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._ORD5.button_intro, .mission_wrapper ._ORD5.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._ORD5.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._ORD5.mission_left_foot, .mission_wrapper ._ORD5.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._ORD5.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._ORD5.mission_right_foot {
+.CELL._ORD5, .header_wrapper ._ORD5.logo, .header_wrapper ._ORD5.center_header, .header_wrapper ._ORD5.button_container_header, .intro_wrapper ._ORD5.body_intro, .intro_wrapper ._ORD5.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper ._ORD5.button_intro, .mission_wrapper ._ORD5.mission_left, .mission_wrapper .mission_left .mission_left_wrapper ._ORD5.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper ._ORD5.mission_left_foot, .mission_wrapper ._ORD5.mission_right, .mission_wrapper .mission_right .mission_right_wrapper ._ORD5.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper ._ORD5.mission_right_foot, .realizzazioni_wrapper ._ORD5.container_titolo_realizzazioni, .realizzazioni_wrapper ._ORD5.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._ORD5.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper ._ORD5.costruz_right, .realizzazioni_wrapper ._ORD5.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._ORD5.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper ._ORD5.nuove_right, .container_footer .footer_wrapper ._ORD5.label, .container_footer .footer_wrapper ._ORD5.content_tel, .container_footer .footer_wrapper ._ORD5.content_email, .container_footer .footer_wrapper ._ORD5.flex, .container_footer .footer_wrapper ._ORD5.chiudi {
   -webkit-order: 5 !important;
   -ms-flex-order: 5 !important;
   order: 5 !important;
@@ -588,37 +606,37 @@ properties we can set a different align to a specific .CELL
 
 --------------------------------------------------------------------
 */
-.CELL.AUTO, .header_wrapper .logo, .header_wrapper .AUTO.center_header, .header_wrapper .button_container_header, .intro_wrapper .body_intro, .intro_wrapper .container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .button_intro, .mission_wrapper .mission_left, .mission_wrapper .mission_left .mission_left_wrapper .mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .mission_left_foot, .mission_wrapper .mission_right, .mission_wrapper .mission_right .mission_right_wrapper .mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .mission_right_foot {
+.CELL.AUTO, .header_wrapper .logo, .header_wrapper .AUTO.center_header, .header_wrapper .button_container_header, .intro_wrapper .body_intro, .intro_wrapper .container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .button_intro, .mission_wrapper .mission_left, .mission_wrapper .mission_left .mission_left_wrapper .mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .mission_left_foot, .mission_wrapper .mission_right, .mission_wrapper .mission_right .mission_right_wrapper .mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .mission_right_foot, .realizzazioni_wrapper .container_titolo_realizzazioni, .realizzazioni_wrapper .container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .costruz_right, .realizzazioni_wrapper .container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .nuove_right, .container_footer .footer_wrapper .label, .container_footer .footer_wrapper .content_tel, .container_footer .footer_wrapper .content_email, .container_footer .footer_wrapper .AUTO.flex, .container_footer .footer_wrapper .chiudi {
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
 }
 
-.CELL.START, .header_wrapper .START.logo, .header_wrapper .START.center_header, .header_wrapper .START.button_container_header, .intro_wrapper .START.body_intro, .intro_wrapper .START.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .START.button_intro, .mission_wrapper .START.mission_left, .mission_wrapper .mission_left .mission_left_wrapper .START.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .START.mission_left_foot, .mission_wrapper .START.mission_right, .mission_wrapper .mission_right .mission_right_wrapper .START.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .START.mission_right_foot {
+.CELL.START, .header_wrapper .START.logo, .header_wrapper .START.center_header, .header_wrapper .START.button_container_header, .intro_wrapper .START.body_intro, .intro_wrapper .START.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .START.button_intro, .mission_wrapper .START.mission_left, .mission_wrapper .mission_left .mission_left_wrapper .START.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .START.mission_left_foot, .mission_wrapper .START.mission_right, .mission_wrapper .mission_right .mission_right_wrapper .START.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .START.mission_right_foot, .realizzazioni_wrapper .START.container_titolo_realizzazioni, .realizzazioni_wrapper .START.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .START.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .START.costruz_right, .realizzazioni_wrapper .START.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .START.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .START.nuove_right, .container_footer .footer_wrapper .START.label, .container_footer .footer_wrapper .START.content_tel, .container_footer .footer_wrapper .START.content_email, .container_footer .footer_wrapper .START.flex, .container_footer .footer_wrapper .START.chiudi {
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
-.CELL.END, .header_wrapper .END.logo, .header_wrapper .END.center_header, .header_wrapper .END.button_container_header, .intro_wrapper .END.body_intro, .intro_wrapper .END.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .END.button_intro, .mission_wrapper .END.mission_left, .mission_wrapper .mission_left .mission_left_wrapper .END.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .END.mission_left_foot, .mission_wrapper .END.mission_right, .mission_wrapper .mission_right .mission_right_wrapper .END.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .END.mission_right_foot {
+.CELL.END, .header_wrapper .END.logo, .header_wrapper .END.center_header, .header_wrapper .END.button_container_header, .intro_wrapper .END.body_intro, .intro_wrapper .END.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .END.button_intro, .mission_wrapper .END.mission_left, .mission_wrapper .mission_left .mission_left_wrapper .END.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .END.mission_left_foot, .mission_wrapper .END.mission_right, .mission_wrapper .mission_right .mission_right_wrapper .END.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .END.mission_right_foot, .realizzazioni_wrapper .END.container_titolo_realizzazioni, .realizzazioni_wrapper .END.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .END.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .END.costruz_right, .realizzazioni_wrapper .END.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .END.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .END.nuove_right, .container_footer .footer_wrapper .END.label, .container_footer .footer_wrapper .END.content_tel, .container_footer .footer_wrapper .END.content_email, .container_footer .footer_wrapper .END.flex, .container_footer .footer_wrapper .END.chiudi {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
-.CELL.CENTER, .header_wrapper .CENTER.logo, .header_wrapper .CENTER.center_header, .header_wrapper .CENTER.button_container_header, .intro_wrapper .CENTER.body_intro, .intro_wrapper .CENTER.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .CENTER.button_intro, .mission_wrapper .CENTER.mission_left, .mission_wrapper .mission_left .mission_left_wrapper .CENTER.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .CENTER.mission_left_foot, .mission_wrapper .CENTER.mission_right, .mission_wrapper .mission_right .mission_right_wrapper .CENTER.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .CENTER.mission_right_foot {
+.CELL.CENTER, .header_wrapper .CENTER.logo, .header_wrapper .CENTER.center_header, .header_wrapper .CENTER.button_container_header, .intro_wrapper .CENTER.body_intro, .intro_wrapper .CENTER.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .CENTER.button_intro, .mission_wrapper .CENTER.mission_left, .mission_wrapper .mission_left .mission_left_wrapper .CENTER.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .CENTER.mission_left_foot, .mission_wrapper .CENTER.mission_right, .mission_wrapper .mission_right .mission_right_wrapper .CENTER.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .CENTER.mission_right_foot, .realizzazioni_wrapper .CENTER.container_titolo_realizzazioni, .realizzazioni_wrapper .CENTER.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .CENTER.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .CENTER.costruz_right, .realizzazioni_wrapper .CENTER.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .CENTER.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .CENTER.nuove_right, .container_footer .footer_wrapper .CENTER.label, .container_footer .footer_wrapper .CENTER.content_tel, .container_footer .footer_wrapper .CENTER.content_email, .container_footer .footer_wrapper .CENTER.flex, .container_footer .footer_wrapper .CENTER.chiudi {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.CELL.STRETCH, .header_wrapper .STRETCH.logo, .header_wrapper .STRETCH.center_header, .header_wrapper .STRETCH.button_container_header, .intro_wrapper .STRETCH.body_intro, .intro_wrapper .STRETCH.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .STRETCH.button_intro, .mission_wrapper .STRETCH.mission_left, .mission_wrapper .mission_left .mission_left_wrapper .STRETCH.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .STRETCH.mission_left_foot, .mission_wrapper .STRETCH.mission_right, .mission_wrapper .mission_right .mission_right_wrapper .STRETCH.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .STRETCH.mission_right_foot {
+.CELL.STRETCH, .header_wrapper .STRETCH.logo, .header_wrapper .STRETCH.center_header, .header_wrapper .STRETCH.button_container_header, .intro_wrapper .STRETCH.body_intro, .intro_wrapper .STRETCH.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .STRETCH.button_intro, .mission_wrapper .STRETCH.mission_left, .mission_wrapper .mission_left .mission_left_wrapper .STRETCH.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .STRETCH.mission_left_foot, .mission_wrapper .STRETCH.mission_right, .mission_wrapper .mission_right .mission_right_wrapper .STRETCH.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .STRETCH.mission_right_foot, .realizzazioni_wrapper .STRETCH.container_titolo_realizzazioni, .realizzazioni_wrapper .STRETCH.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .STRETCH.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .STRETCH.costruz_right, .realizzazioni_wrapper .STRETCH.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .STRETCH.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .STRETCH.nuove_right, .container_footer .footer_wrapper .STRETCH.label, .container_footer .footer_wrapper .STRETCH.content_tel, .container_footer .footer_wrapper .STRETCH.content_email, .container_footer .footer_wrapper .STRETCH.flex, .container_footer .footer_wrapper .STRETCH.chiudi {
   -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch;
 }
 
-.CELL.BASELINE, .header_wrapper .BASELINE.logo, .header_wrapper .BASELINE.center_header, .header_wrapper .BASELINE.button_container_header, .intro_wrapper .BASELINE.body_intro, .intro_wrapper .BASELINE.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .BASELINE.button_intro, .mission_wrapper .BASELINE.mission_left, .mission_wrapper .mission_left .mission_left_wrapper .BASELINE.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .BASELINE.mission_left_foot, .mission_wrapper .BASELINE.mission_right, .mission_wrapper .mission_right .mission_right_wrapper .BASELINE.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .BASELINE.mission_right_foot {
+.CELL.BASELINE, .header_wrapper .BASELINE.logo, .header_wrapper .BASELINE.center_header, .header_wrapper .BASELINE.button_container_header, .intro_wrapper .BASELINE.body_intro, .intro_wrapper .BASELINE.container_button_intro, .intro_wrapper .container_button_intro .container_button_intro_wrapper .BASELINE.button_intro, .mission_wrapper .BASELINE.mission_left, .mission_wrapper .mission_left .mission_left_wrapper .BASELINE.mission_left_head, .mission_wrapper .mission_left .mission_left_wrapper .BASELINE.mission_left_foot, .mission_wrapper .BASELINE.mission_right, .mission_wrapper .mission_right .mission_right_wrapper .BASELINE.mission_right_head, .mission_wrapper .mission_right .mission_right_wrapper .BASELINE.mission_right_foot, .realizzazioni_wrapper .BASELINE.container_titolo_realizzazioni, .realizzazioni_wrapper .BASELINE.container_costruz, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .BASELINE.costruz_left, .realizzazioni_wrapper .container_costruz .container_costruz_wrapper .BASELINE.costruz_right, .realizzazioni_wrapper .BASELINE.container_nuove, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .BASELINE.nuove_left, .realizzazioni_wrapper .container_nuove .container_nuove_wrapper .BASELINE.nuove_right, .container_footer .footer_wrapper .BASELINE.label, .container_footer .footer_wrapper .BASELINE.content_tel, .container_footer .footer_wrapper .BASELINE.content_email, .container_footer .footer_wrapper .BASELINE.flex, .container_footer .footer_wrapper .BASELINE.chiudi {
   -webkit-align-self: baseline;
   -ms-flex-item-align: baseline;
   align-self: baseline;
@@ -968,38 +986,46 @@ Sets a scrollable area with touch support
 
 
 */
+/* HEADER VARIABLE */
 /* SLIDER VARIABLE */
 /* INTRO VARIABLE */
 /* MISSION VARIABLE */
+/* CAROUSEL VARIABLE */
+/* ARREDAMENTI VARIABLE */
+/* FRASI VARIABLE */
+/* SERVIZI VARIABLE */
+/* OPINIONI VARIABLE */
+/* REALIZZAZIONI VARIABLE */
+/* FOOTER VARIABLE */
 body {
   font-size: 16px;
   margin: 0px;
 }
 body .wrapper {
-   /* @extend .EXTENDER;
+    /* @extend .EXTENDER;
 
-    .main_col {
-      @include cell();
-      width: $main_col_width;
+     .main_col {
+       @include cell();
+       width: $main_col_width;
 
-      .site_header {
-        @include cell();
-        height: 3em;
-        border-bottom: solid 1px;
+       .site_header {
+         @include cell();
+         height: 3em;
+         border-bottom: solid 1px;
 
-      }
+       }
 
-      .site_footer {
-        @include cell();
-        height: 50px;
-        background-color: red;
-      }
+       .site_footer {
+         @include cell();
+         height: 50px;
+         background-color: red;
+       }
 
-      .site_body {
-        @include flex();
-      }
+       .site_body {
+         @include flex();
+       }
 
-    }*/
+     }*/
 }
 body .wrapper .header {
   position: fixed;
@@ -1030,6 +1056,48 @@ body .wrapper #mission {
   width: 100%;
   height: 50em;
   border: 1px solid green;
+}
+body .wrapper #carousel {
+  position: relative;
+  width: 100%;
+  height: 50em;
+  border: 1px solid red;
+}
+body .wrapper #arredamenti {
+  position: relative;
+  width: 100%;
+  height: 50em;
+  border: 1px solid blue;
+}
+body .wrapper #servizi {
+  position: relative;
+  width: 100%;
+  height: 25em;
+  border: 1px solid green;
+}
+body .wrapper #frasi {
+  position: relative;
+  width: 100%;
+  height: 20em;
+  border: 1px solid red;
+}
+body .wrapper #opinioni {
+  position: relative;
+  width: 100%;
+  height: 25em;
+  border: 1px solid blue;
+}
+body .wrapper #realizzazioni {
+  position: relative;
+  width: 100%;
+  height: 77em;
+  border: 1px solid green;
+}
+body .wrapper .footer {
+  position: relative;
+  height: 4em;
+  width: 100%;
+  background-color: #c2c45d;
 }
 
 .header_wrapper .logo {
@@ -1092,6 +1160,64 @@ body .wrapper #mission {
 .mission_wrapper .mission_right .mission_right_wrapper .mission_right_foot {
   height: 38.1966%;
   border: 1px solid black;
+}
+
+.realizzazioni_wrapper .container_titolo_realizzazioni {
+  height: 7em;
+}
+.realizzazioni_wrapper .container_costruz {
+  height: 35em;
+  background-color: #c4000a;
+}
+.realizzazioni_wrapper .container_costruz .container_costruz_wrapper .costruz_left {
+  width: 61.8034%;
+  border: 1px solid black;
+}
+.realizzazioni_wrapper .container_costruz .container_costruz_wrapper .costruz_right {
+  width: 38.1966%;
+  border: 1px solid black;
+}
+.realizzazioni_wrapper .container_nuove {
+  height: 35em;
+  background-color: #0b97c4;
+}
+.realizzazioni_wrapper .container_nuove .container_nuove_wrapper .nuove_left {
+  width: 38.1966%;
+  border: 1px solid black;
+}
+.realizzazioni_wrapper .container_nuove .container_nuove_wrapper .nuove_right {
+  width: 61.8034%;
+  border: 1px solid black;
+}
+
+.container_footer .footer_wrapper .label {
+  border: 1px solid black;
+  width: 15em;
+}
+.container_footer .footer_wrapper .content_tel {
+  border: 1px solid black;
+  width: 7em;
+}
+.container_footer .footer_wrapper .content_email {
+  border: 1px solid black;
+  width: 7em;
+}
+.container_footer .footer_wrapper .flex {
+  border: 1px solid black;
+}
+.container_footer .footer_wrapper .chiudi {
+  border: 1px solid black;
+  width: 7em;
+}
+
+.dotted_line {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-image: url("../img/line.png");
+  background-repeat: repeat-x;
+  z-index: 1;
 }
 
 article,

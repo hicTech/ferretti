@@ -1,0 +1,57 @@
+$width_costruz_left: 61.803398874985468379271708299583%;
+$width_costruz_right:38.196601125014531620728291700417%;
+
+$width_nuove_left:38.196601125014531620728291700417%;
+$width_nuove_right:61.803398874985468379271708299583%;
+
+
+.realizzazioni_wrapper{
+  @include rows();
+
+  .container_titolo_realizzazioni{
+    @include cell();
+    height: 7em;
+  }
+
+  .container_costruz {
+    @include cell();
+    height: 35em;
+    background-color: #c4000a;
+
+    .container_costruz_wrapper{
+      @include cols();
+
+      .costruz_left{
+        @include cell();
+        width:$width_costruz_left;
+        border:1px solid black
+      }
+      .costruz_right{
+        @include cell();
+        width:$width_costruz_right;
+        border:1px solid black
+      }
+    }
+  }
+
+  .container_nuove {
+    @include cell();
+    height: 35em;
+    background-color: #0b97c4;
+
+    .container_nuove_wrapper{
+      @include cols();
+
+      .nuove_left{
+        @include cell();
+        width:$width_nuove_left;
+        border:1px solid black
+      }
+      .nuove_right{
+        @include cell();
+        width:$width_nuove_right;
+        border:1px solid black
+      }
+    }
+  }
+}

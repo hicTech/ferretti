@@ -1,0 +1,39 @@
+$width_label: 15em;
+$width_tel:7em;
+$width_email:7em;
+$width_chiudi: 7em;
+
+
+
+.container_footer{
+
+    .footer_wrapper{
+      @include cols();
+
+      .label{
+        @include cell();
+        border:1px solid black;
+        width:$width_label;
+      }
+      .content_tel{
+        @include cell();
+        border:1px solid black;
+        width:$width_tel;
+      }
+      .content_email{
+        @include cell();
+        border:1px solid black;
+        width:$width_email;
+      }
+      .flex{
+        @include flex();
+        border:1px solid black;
+      }
+      .chiudi{
+        @include cell();
+        border:1px solid black;
+        width:$width_chiudi;
+      }
+    }
+
+}
