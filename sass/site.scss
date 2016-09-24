@@ -6,15 +6,20 @@ $width_container_header:100%;
 
 /* SLIDER VARIABLE */
 $width_slider:100%;
-$height_slider:30em;
+$height_slider:40em;
 
 /* INTRO VARIABLE */
 $width_intro: 100%;
 $height_intro:30em;
 
+/* MISSION VARIABLE */
+$width_mission: 100%;
+$height_mission:50em;
+
+
 body {
   font-size:$size_text_body ;
-
+  margin:0px;
 
   .site {
    /* @extend .EXTENDER;
@@ -43,8 +48,11 @@ body {
     }*/
 
     .header{
-      position: relative;
+      position: fixed;
       height:$height_header;
+      width: 100%;
+
+
       .container_header{
         position: relative;
         width:$width_container_header;
@@ -57,15 +65,19 @@ body {
       position: relative;
       width: $width_slider;
       height:$height_slider ;
-      border: 1px solid black;
+      border: 1px solid red;
     }
     #intro {
       position: relative;
       width: $width_intro;
       height:$height_intro;
-      border: 1px solid black;
-
-
+      border: 1px solid blue;
+    }
+    #mission{
+      position: relative;
+      width: $width_mission;
+      height:$height_mission;
+      border: 1px solid green;
     }
 
 

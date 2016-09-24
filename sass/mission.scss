@@ -1,0 +1,58 @@
+$golden_ratio : 1.61803398875;
+
+$width_mission_left : 61.803398874985468379271708299583%;
+$width_mission_right : 38.196601125014531620728291700417%;
+
+$height_mission_left_head : 61.803398874985468379271708299583%;
+$height_mission_left_foot : 38.196601125014531620728291700417%;
+
+$height_mission_right_head : 61.803398874985468379271708299583%;
+$height_mission_right_foot : 38.196601125014531620728291700417%;
+
+.mission_wrapper{
+  @include cols();
+
+
+  .mission_left{
+    @include cell();
+    width:$width_mission_left;
+    border: 1px solid black;
+
+    .mission_left_wrapper{
+      @include rows();
+
+      .mission_left_head{
+        @include cell();
+        height:$height_mission_left_head;
+        border:1px solid black;
+      }
+      .mission_left_foot{
+        @include cell();
+        height: $height_mission_left_foot;
+        border:1px solid black;
+      }
+    }
+
+  }
+  .mission_right{
+    @include cell();
+    width:$width_mission_right;
+    border: 1px solid black;
+
+    .mission_right_wrapper{
+      @include rows();
+
+      .mission_right_head{
+        @include cell();
+        height:$height_mission_right_head;
+        border:1px solid black;
+      }
+      .mission_right_foot{
+        @include cell();
+        height: $height_mission_right_foot;
+        border:1px solid black;
+      }
+    }
+
+  }
+}
