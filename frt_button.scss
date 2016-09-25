@@ -1,0 +1,57 @@
+$frt_btn_padding: 1.9em 0.8em;
+
+$frt_btn_border_thickness: 3px;
+$frt_btn_border_color: #262626;
+$frt_btn_2nd_border_thickness: 5px;
+
+$frt_btn_animation: ease-out;
+$frt_btn_animation_time: 0.4s;
+
+
+.frt_btn_wrapper{
+
+  background-image: url("../img/strips.png");
+  position:relative;
+  -webkit-transition: all $frt_btn_animation_time $frt_btn_animation;
+  -moz-transition: all $frt_btn_animation_time $frt_btn_animation;
+  -o-transition: all $frt_btn_animation_time $frt_btn_animation;
+  transition: all $frt_btn_animation_time $frt_btn_animation;
+
+  .frt_btn{
+    border: solid $frt_btn_border_thickness $frt_btn_border_color;
+    padding:$frt_btn_padding;
+    background-color:white;
+    position:relative;
+    top:$frt_btn_2nd_border_thickness*(-1);
+    left:$frt_btn_2nd_border_thickness;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  &:hover{
+    background-color: #000000;
+
+    .frt_btn{
+      border-color: #0086ff;
+      background-color: #0086ff;
+      color: white;
+    }
+
+  }
+
+  &._400px{
+    width: 400px;
+  }
+
+  &._300px{
+    width: 300px;
+  }
+
+  &._200px{
+    width: 200px;
+  }
+
+}
+
+
+
