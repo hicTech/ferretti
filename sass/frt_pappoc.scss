@@ -34,4 +34,13 @@ $font_pappoc:12px Arial, sans-serif;
     background:$color_pappoc;
     z-index: -1;
   }
+  &.white{
+    .numberCircle {
+      border: 2px solid white;
+    }
+    .pappoc_line{
+      background:white;
+    }
+
+  }
 }
