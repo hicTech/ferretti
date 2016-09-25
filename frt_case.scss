@@ -1,0 +1,39 @@
+$frt_btn_padding: 1.9em 0.8em;
+
+$frt_btn_border_thickness: 3px;
+$frt_btn_border_color: #262626;
+$frt_btn_2nd_border_thickness: 5px;
+
+$frt_btn_animation: ease-out;
+$frt_btn_animation_time: 0.4s;
+
+
+.frt_case{
+
+  background-image: url("../img/strips.png");
+  position:relative;
+
+
+  .frt_case_wrapper{
+    border: solid $frt_btn_border_thickness $frt_btn_border_color;
+
+    background-color:white;
+    position:relative;
+    top:$frt_btn_2nd_border_thickness*(-1);
+    left:$frt_btn_2nd_border_thickness;
+    width: 100%;
+
+    .frt_case_content{
+      padding: 30px;
+    }
+  }
+
+  &.inverse{
+    .frt_case_wrapper {
+      left: (($frt_btn_border_thickness * 2) + $frt_btn_2nd_border_thickness ) *(-1);
+    }
+  }
+}
+
+
+
