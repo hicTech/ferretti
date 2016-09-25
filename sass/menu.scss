@@ -7,19 +7,21 @@ $max_height_nav_menu: 29.375em;
 $height_footer_menu: 6em;
 $max_width_menu: 86em;
 $width_cell_header_menu: 18.750em;
-$width_cell_footer_menu: 18.750em;
+$width_cell_btn_close:15em;
+
+$width_cell_footer_menu: 24.75em;
 
 
 $width_container_nav:43.750em;
 $height_container_nav:20em;
 
 $padding_nav_row:0.625em;
-$padding_header_menu:30;
-$padding_footer_menu:30;
+
+$size_icon_close:2.500em;
 
 .menu {
 
-  
+
   width: 100%;
   height: 100%;
   background-color: $background_menu;
@@ -51,10 +53,14 @@ $padding_footer_menu:30;
         }
         .btn_close_button {
           @include cell();
-          width: $width_cell_header_menu;
+          width: $width_cell_btn_close;
 
           .label_close {
             float: right;
+          }
+          .icon_close{
+            font-size: $size_icon_close;
+            margin-left: 0.2em;
           }
 
         }
@@ -134,8 +140,12 @@ $padding_footer_menu:30;
           @include cell();
           width: $width_cell_footer_menu;
 
-          .label_back{
+          .label_social{
             float: right;
+            margin-left: 1em;
+          }
+          .icon_social{
+            margin-left:1em;
           }
         }
       }
@@ -147,11 +157,11 @@ $padding_footer_menu:30;
 
 
 .padding_header_menu {
-  @include padder($padding_header_menu);
+  @extend .PADDER-CENTER;
 }
 
 .padding_footer_menu{
-  @include padder($padding_footer_menu);
+  @extend .PADDER-CENTER;
 }
 
 
