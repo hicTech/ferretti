@@ -1,0 +1,167 @@
+$background_menu: #ffffff;
+
+$first_color: #323232;
+
+$height_header_menu: 6em;
+$max_height_nav_menu: 29.375em;
+$height_footer_menu: 6em;
+$max_width_menu: 86em;
+$width_cell_header_menu: 18.750em;
+$width_cell_footer_menu: 18.750em;
+
+
+$width_container_nav:43.750em;
+$height_container_nav:20em;
+
+$padding_nav_row:0.625em;
+$padding_header_menu:30;
+$padding_footer_menu:30;
+
+.menu {
+
+
+  font
+  width: 100%;
+  height: 100%;
+  background-color: $background_menu;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  .menu_wrapper {
+    @include rows();
+    max-width: $max_width_menu;
+    margin: 0 auto;
+
+    .header_menu {
+      @include cell();
+      height: $height_header_menu;
+      background-color: $background_menu;
+
+      .header_menu_wrapper {
+        @include cols(jus-between);
+
+        .rec_tel {
+          @include cell();
+          width: $width_cell_header_menu;
+
+          .label_tel {
+            color: $first_color;
+          }
+
+        }
+        .btn_close_button {
+          @include cell();
+          width: $width_cell_header_menu;
+
+          .label_close {
+            float: right;
+          }
+
+        }
+      }
+    }
+    .nav_menu {
+      @include flex();
+
+
+      .container_nav {
+        position: relative;
+        width: $width_container_nav;
+        height: $height_container_nav;
+
+        .container_nav_wrapper {
+          @include cols();
+
+          .col_left {
+            @include cell();
+            width: 50%;
+
+
+            .col_left_wrapper {
+              @include rows();
+
+              .nav_row {
+                @include flex();
+
+                @extend .padder_nav_row;
+
+              }
+
+            }
+          }
+          .col_right {
+            @include cell();
+            width: 50%;
+
+
+            .col_right_wrapper {
+              @include rows();
+
+              .nav_row {
+                @include flex();
+
+                @extend .padder_nav_row;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer_menu {
+      @include cell();
+      height: $height_footer_menu;
+
+      .footer_menu_wrapper {
+        @include cols(jus-between);
+
+        .rec_email {
+          @include cell();
+          width: $width_cell_footer_menu;
+
+          .label_email{
+            color: $first_color;
+          }
+        }
+        .btn_back_button {
+          @include cell();
+          width: $width_cell_footer_menu;
+
+          .label_back{
+            text-align: center;
+          }
+        }
+        .menu_social {
+          @include cell();
+          width: $width_cell_footer_menu;
+
+          .label_back{
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.padding_header_menu {
+  @include padder($padding_header_menu);
+}
+
+.padding_footer_menu{
+  @include padder($padding_footer_menu);
+}
+
+
+
+.padder_nav_row {
+  padding: $padding_nav_row;
+
+  .item {
+
+  }
+}
+
