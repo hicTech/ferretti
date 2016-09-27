@@ -27,7 +27,7 @@ $height_arredamenti: auto;
 
 /* FRASI VARIABLE */
 $width_frasi: 100%;
-$height_frasi: 20em;
+$height_frasi: 48.125em;
 
 /* SERVIZI VARIABLE */
 $width_servizi: 100%;
@@ -98,17 +98,18 @@ body {
       width: $width_arredamenti;
       height: $height_arredamenti;
     }
-    #servizi {
-      position: relative;
-      width: $width_servizi;
-      height: $height_servizi;
-      border: 1px solid green;
-    }
+
     #frasi {
       position: relative;
       width: $width_frasi;
       height: $height_frasi;
       border: 1px solid red;
+    }
+    #servizi {
+      position: relative;
+      width: $width_servizi;
+      height: $height_servizi;
+      border: 1px solid green;
     }
     #opinioni {
       position: relative;
