@@ -1,3 +1,18 @@
+/*
+
+<div class="frt_img nocanvas flip reverse medium" style="width: 40%">
+    <div class="frt_img_wrapper medium reverse">
+        <img src="img/test.png"/>
+    </div>
+</div>
+
+
+*/
+
+
+
+
+
 $frt_img: 10px;
 
 .frt_img{
@@ -18,6 +33,8 @@ $frt_img: 10px;
   &.no_border{
     background-image: none;
   }
+
+
 
   .frt_img_wrapper{
     position: relative;
@@ -63,6 +80,23 @@ $frt_img: 10px;
 
 
 
+  &.nocanvas{
+    background-image: none !important;
+    .frt_img_wrapper {
+
+      &:after {
+        top: 0px !important;
+        left: 0px !important;
+      }
+
+      img {
+        top: 0px !important;
+        left: 0px !important;
+      }
+    }
+  }
+
+
   &.flip{
     .frt_img_wrapper{
       &:after{
@@ -77,3 +111,4 @@ $frt_img: 10px;
   }
 
 }
+
