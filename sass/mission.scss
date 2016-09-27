@@ -1,58 +1,127 @@
-$golden_ratio : 1.61803398875;
+$golden_ratio: 1.61803398875;
 
-$width_mission_left : 61.803398874985468379271708299583%;
-$width_mission_right : 38.196601125014531620728291700417%;
+$width_mission_left: 61.803398874985468379271708299583%;
+$width_mission_right: 38.196601125014531620728291700417%;
 
-$height_mission_left_head : 61.803398874985468379271708299583%;
-$height_mission_left_foot : 38.196601125014531620728291700417%;
+$height_mission_left_head: 61.803398874985468379271708299583%;
+$height_mission_left_foot: 38.196601125014531620728291700417%;
 
-$height_mission_right_head : 61.803398874985468379271708299583%;
-$height_mission_right_foot : 38.196601125014531620728291700417%;
+$height_mission_right_head: 61.803398874985468379271708299583%;
+$height_mission_right_foot: 38.196601125014531620728291700417%;
 
-.mission_wrapper{
+$head_section_horz: 57.4%;
+$foot_section_horz: 42.6%;
+
+$line_height_grid: 5.250em;
+
+.mission_wrapper {
   @include cols();
 
-
-  .mission_left{
+  .mission_left {
     @include cell();
-    width:$width_mission_left;
-    border: 1px solid black;
+    width: $width_mission_left;
 
-    .mission_left_wrapper{
+
+    .mission_left_wrapper {
       @include rows();
 
-      .mission_left_head{
+      .mission_left_head {
         @include cell();
-        height:$height_mission_left_head;
-        border:1px solid black;
+        height: $head_section_horz;
+
+        text-align: right;
       }
-      .mission_left_foot{
+      .mission_left_foot {
         @include cell();
-        height: $height_mission_left_foot;
-        border:1px solid black;
+        height: $foot_section_horz;
+
+
+        .mission_table_wrapper {
+          @include rows();
+
+          .mission_row {
+            @include cell();
+            height: 25%;
+
+            .wrapper_rows {
+              @include cols();
+
+              .item_cell {
+                @include cell();
+                width: 50%;
+
+                .padding_grid {
+                  @include padder();
+                  top: 45px;
+                  left: 76px;
+                  bottom: 58px;
+                  right: 47px;
+
+                  &.left_padding{
+                    left: 20px;
+                  }
+
+                  .mission_cols {
+                    width: 11.875em;
+                  }
+
+                  .round_item {
+                    float: left;
+                    margin-right: 0.625em;
+                    width: 2.188em;
+                  }
+                  .label_item_row {
+                    float: left;
+                    line-height: 1.000em;
+                  }
+                }
+              }
+
+            }
+          }
+          .mission_table_paragraph {
+            @include cell();
+            height: 50%;
+            padding-left: 4.750em;
+            padding-right: 2.500em;
+          }
+        }
       }
     }
 
   }
-  .mission_right{
+  .mission_right {
     @include cell();
-    width:$width_mission_right;
-    border: 1px solid black;
+    width: $width_mission_right;
 
-    .mission_right_wrapper{
+
+
+    .mission_right_wrapper {
       @include rows();
 
-      .mission_right_head{
+      .mission_right_head {
         @include cell();
-        height:$height_mission_right_head;
-        border:1px solid black;
+        height: $head_section_horz;
+
+        text-align: right;
+
+        .content_title_mission{
+          text-align: left;
+          margin-left: 1.875em;
+          margin-top: 9.688em;
+        }
+
       }
-      .mission_right_foot{
+      .mission_right_foot {
         @include cell();
-        height: $height_mission_right_foot;
-        border:1px solid black;
+        height: $foot_section_horz;
+
+
+
+
       }
     }
 
   }
+
 }

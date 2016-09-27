@@ -1,20 +1,32 @@
-$width_logo:15em;
-$width_button_header:7em;
+$width_logo:21.250em;
+$width_button_header:9.375em;
 
-.header_wrapper {
-  @include cols();
-  .logo {
-    @include cell();
-    width: $width_logo;
-    border:1px solid black;
-  }
-  .center_header{
-    @include flex();
-    border:1px solid black;
-  }
-  .button_container_header {
-    @include cell();
-    width: $width_button_header;
-    border:1px solid black;
+
+.container_header {
+  position: fixed;
+  width: 100%;
+  height: 5.375em;
+  .header_wrapper {
+    @include cols();
+    .logo {
+      @include cell();
+      width: $width_logo;
+
+    }
+    .center_header {
+      @include flex();
+
+    }
+    .button_container_header {
+      @include cell();
+      width: $width_button_header;
+
+      .label_button_header {
+
+      }
+      .icon_button_header {
+        margin-left: 0.2em;
+      }
+    }
   }
 }

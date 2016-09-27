@@ -1,0 +1,54 @@
+$fonts_body: "sofia-pro", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$fonts_paragraph: "museo-regular", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$letter-spacing: 0.2em;
+$letter-spacing-paragraph: 0.1em;
+$prime_color:#262626;
+$second_color:#002a50;
+$third_color:#0086ff;
+$color_paragraph:#595959;
+$interline:1.563em;
+
+
+.label_button {
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: 700;
+  color: $prime_color;
+  letter-spacing: $letter-spacing;
+}
+
+.icon_button {
+  font-size: 1.875em;
+  color:$second_color;
+}
+
+
+.title{
+  font-size: 1.750em;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing;
+  color: $prime_color;
+  line-height: $interline;
+
+
+  &.thin{
+    font-weight: lighter;
+  }
+  &.bold{
+    font-weight: bold;
+  }
+
+}
+
+.paragraph{
+  font-family: $fonts_paragraph;
+  line-height:$interline;
+  letter-spacing: $letter-spacing-paragraph;
+  color: $color_paragraph;
+  margin-top: 0.625em;
+}
+
+.label_pappoc{
+  color:$third_color;
+  text-transform: uppercase;
+}

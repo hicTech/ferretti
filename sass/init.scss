@@ -2,7 +2,7 @@
 @import "grid.scss";
 @import "flexScaffolding.scss";
 
-
+@import "typography.scss";
 @import "site.scss";
 @import "header.scss";
 @import "slider.scss";
@@ -11,7 +11,8 @@
 @import "realizzazioni.scss";
 @import "footer.scss";
 @import "menu.scss";
-
+@import "carousel.scss";
+@import "arredamenti";
 
 
 
@@ -19,11 +20,14 @@
 @import "_normalize.scss";
 @import "frt_button.scss";
 @import "frt_case.scss";
+@import "frt_case.scss";
+@import "frt_images.scss";
 
 
 @import "frt_pappoc";
 @import "frt_corner";
 @import "dotted_line";
+@import "frt_form";
 
 
 

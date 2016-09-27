@@ -1,0 +1,79 @@
+
+.frt_form {
+
+  .frt_form_row {
+    margin-bottom: 15px;
+    .frt_form_label {
+      padding-bottom: 0.4em;
+    }
+
+    .frt_form_input {
+      background-image: url("../img/strips.png");
+      position: relative;
+      display: inline-block;
+      clear: both;
+
+      .frt_input[type="text"], select {
+        padding: 1.15em 2em;
+        border: solid 3px #999;
+        width: 25em;
+        position: relative;
+        top: -3px;
+        left: 3px;
+
+        &:focus {
+          border-color: #363636;
+          outline-width: 0;
+          outline: none;
+        }
+
+        &.highlight {
+          border-color: #ba363d;
+          outline-width: 0;
+          outline: none;
+        }
+      }
+
+      select{
+        -webkit-appearance: none;
+        box-shadow: inset 0px 0px 0px 4px #999;
+        border-radius: 0px;
+        border: none;
+        padding:20px 150px 20px 40px;
+      }
+
+
+
+      .frt_input[type="radio"],
+      .frt_input[type="checkbox"]{
+        width: 1.2em;
+        height: 1.2em;
+        border: solid 3px #999;
+        position: relative;
+        top: -3px;
+        left: 3px;
+        background-color: white;
+        margin-bottom: -3px;
+        outline: none;
+      }
+
+      .frt_input[type="radio"]:checked,
+      .frt_input[type="checkbox"]:checked{
+        border-color: #0086ff;
+        background-color: #0086ff;
+      }
+
+      textarea{
+        padding: 0px;
+        margin: 0px 0px 1px 0px;
+      }
+
+    }
+
+    .frt_form_input_label{
+      margin: -2px 0px 0px 30px;
+    }
+
+  }
+
+}

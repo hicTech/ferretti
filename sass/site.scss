@@ -1,161 +1,146 @@
-
 $size_text_body: 16px;
-$width_container_header:100%;
+$width_container_header: 100%;
 
 /* HEADER VARIABLE */
 $width_header: 100%;
-$height_header:4em;
+$height_header: 5.375em;
 
 /* SLIDER VARIABLE */
-$width_slider:100%;
-$height_slider:40em;
+$width_slider: 100%;
+$height_slider: auto;
 
 /* INTRO VARIABLE */
 $width_intro: 100%;
-$height_intro:30em;
+$height_intro: 32em;
 
 /* MISSION VARIABLE */
 $width_mission: 100%;
-$height_mission:50em;
+$height_mission: 50em;
 
 /* CAROUSEL VARIABLE */
-$width_carousel:100%;
-$height_carousel:50em;
+$width_carousel: 100%;
+$height_carousel: 46.250em;
 
 /* ARREDAMENTI VARIABLE */
-$width_arredamenti:100%;
-$height_arredamenti:50em;
+$width_arredamenti: 100%;
+$height_arredamenti: auto;
 
 /* FRASI VARIABLE */
-$width_frasi:100%;
-$height_frasi:20em;
+$width_frasi: 100%;
+$height_frasi: 20em;
 
 /* SERVIZI VARIABLE */
-$width_servizi:100%;
-$height_servizi:25em;
+$width_servizi: 100%;
+$height_servizi: 25em;
 
 /* OPINIONI VARIABLE */
-$width_opinioni:100%;
-$height_opinioni:25em;
-
+$width_opinioni: 100%;
+$height_opinioni: 25em;
 
 /* REALIZZAZIONI VARIABLE */
-$width_realizzazioni:100%;
-$height_realizzazioni:77em;
+$width_realizzazioni: 100%;
+$height_realizzazioni: 77em;
 
 /* FOOTER VARIABLE */
-$height_footer:4em;
-
+$height_footer: 4em;
 
 body {
-  font-size:$size_text_body ;
-  margin:0px;
+  font-family: $fonts_body;
+  font-size: $size_text_body;
+  margin: 0px;
 
   .wrapper {
-    /* @extend .EXTENDER;
+    max-width: 1360px;
+    margin: 0 auto;
 
-     .main_col {
-       @include cell();
-       width: $main_col_width;
-
-       .site_header {
-         @include cell();
-         height: 3em;
-         border-bottom: solid 1px;
-
-       }
-
-       .site_footer {
-         @include cell();
-         height: 50px;
-         background-color: red;
-       }
-
-       .site_body {
-         @include flex();
-       }
-
-     }*/
-
-    .header{
-      position: fixed;
-      height:$height_header;
+    .header {
+      position: relative;
+      height: $height_header;
       width: 100%;
+      z-index: 9999999;
 
-
-      .container_header{
-        position: relative;
-        width:$width_container_header;
-        height:100%;
-        margin-right: auto;
-        margin-left: auto;
-      }
     }
     #slider {
       position: relative;
       width: $width_slider;
-      height:$height_slider ;
-      border: 1px solid red;
+      height: $height_slider;
+      @extend .section;
     }
     #intro {
       position: relative;
       width: $width_intro;
-      height:$height_intro;
-      border: 1px solid blue;
+      height: $height_intro;
     }
-    #mission{
+    #mission {
       position: relative;
       width: $width_mission;
-      height:$height_mission;
-      border: 1px solid green;
+      height: $height_mission;
+
+      .container_mission {
+        .content_bubble {
+          z-index: 2;
+          position: absolute;
+          width: 30.625em;
+          height: 19.688em;
+          top: 15.750em;
+          right:5%;
+        }
+
+      }
     }
-    #carousel{
+    #carousel {
       position: relative;
       width: $width_carousel;
-      height:$height_carousel;
-      border: 1px solid red;
+      height: $height_carousel;
     }
-    #arredamenti{
+    #arredamenti {
       position: relative;
       width: $width_arredamenti;
       height: $height_arredamenti;
       border: 1px solid blue;
     }
-    #servizi{
+    #servizi {
       position: relative;
       width: $width_servizi;
       height: $height_servizi;
       border: 1px solid green;
     }
-    #frasi{
+    #frasi {
       position: relative;
       width: $width_frasi;
       height: $height_frasi;
       border: 1px solid red;
     }
-    #opinioni{
+    #opinioni {
       position: relative;
       width: $width_opinioni;
       height: $height_opinioni;
       border: 1px solid blue;
     }
-    #realizzazioni{
+    #realizzazioni {
       position: relative;
       width: $width_realizzazioni;
       height: $height_realizzazioni;
       border: 1px solid green;
     }
-    .footer{
+    .footer {
       position: relative;
-      height:$height_footer;
+      height: $height_footer;
       width: 100%;
       background-color: #c2c45d;
     }
 
-
-
-
   }
+}
+
+.section {
+  margin-bottom: 14.063em;
+}
+
+.container_section {
+  max-width: 1360px;
+  margin: 0 auto;
+  height: 100%;
 }
 
 

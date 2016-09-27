@@ -1,7 +1,7 @@
 
 
 $width_pappoc:45px;
-$height_pappoc:20px;
+$height_pappoc:15px;
 $color_pappoc: #252525;
 $font_pappoc:12px Arial, sans-serif;
 
@@ -23,7 +23,7 @@ $font_pappoc:12px Arial, sans-serif;
     text-align: center;
 
     font:$font_pappoc;
-    line-height:$height_pappoc;
+    line-height:$height_pappoc+1;
   }
 
   .pappoc_line{

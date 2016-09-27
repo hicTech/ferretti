@@ -1,51 +1,86 @@
 $golden_ratio : 1.61803398875;
 
-$height_container_button_intro: 20%;
-$height_body_intro: 80%;
+$height_container_button_intro: 6.000em;
+$height_body_intro: 21.875em;
 
 $width_intro_chisiamo : 61.803398874985468379271708299583%;
 $width_img_chisiamo : 38.196601125014531620728291700417%;
 
 
+$position_logo_bianco: 28.563em;
 
 
-.intro_wrapper{
-  @include rows();
 
-  .body_intro{
-    @include cell();
-    height:$height_body_intro;
-    border:1px solid black;
 
-    .body_intro_wrapper{
-      @include cols();
+.container_intro {
+  .intro_wrapper {
+    @include rows(jus-between);
 
-      .img_chisiamo{
-        border:1px solid black;
-        width:$width_img_chisiamo;
-      }
-      .intro_chisiamo{
-        border:1px solid black;
-        width:$width_intro_chisiamo;
+    .body_intro {
+      @include cell();
+      height: $height_body_intro;
+
+      .body_intro_wrapper {
+        @include cols();
+
+        .img_chisiamo {
+          width: $width_img_chisiamo;
+          position: relative;
+
+          .container_img_chisiamo {
+            /*width: 95%;
+            height: 95%;*/
+          }
+        }
+        .intro_chisiamo {
+          position: relative;
+          width: $width_intro_chisiamo;
+
+          .content_intro_chisiamo {
+            position: absolute;
+            bottom: 0em;
+            padding: 0 1.875em;
+            .title_chisiamo {
+
+            }
+            .paragraph_chisiamo {
+
+            }
+          }
+
+        }
       }
     }
-  }
-  .container_button_intro{
-    @include cell();
-    height:$height_container_button_intro;
-    border:1px solid black;
+    .container_button_intro {
+      @include cell();
+      height: $height_container_button_intro;
 
-    .container_button_intro_wrapper{
-      @include cols(jus-center);
+      .container_button_intro_wrapper {
+        @include cols(jus-center);
 
-      .button_intro{
-        border:1px solid black;
-        @include cell();
-        width: 20em;
+        .button_intro {
+          @include cell();
+          width: 17em;
+
+          .icon_button_intro {
+            margin-right: 0.214em;
+          }
+        }
+
       }
+    }
 
+  }
 
+  .logo_bianco_container{
+    position: absolute;
+    width:100%;
+    bottom: $position_logo_bianco;
+
+    .container_center{
+      position:relative;
+      width: 90%;
+      margin: 0 auto;
     }
   }
-
 }

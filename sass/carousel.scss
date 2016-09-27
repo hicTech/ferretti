@@ -1,0 +1,24 @@
+
+
+
+
+
+.container_carousel {
+  .container_img_section {
+    width: 58.4%;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 2.5em;
+
+    img {
+      height: 100%;
+    }
+  }
+  .content_bubble_carousel{
+    position: absolute;
+    bottom: 9.063em;
+    width: 31.250em;
+    height: 15.000em;
+    left: 1.563em;
+  }
+}
