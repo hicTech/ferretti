@@ -1,10 +1,11 @@
 $fonts_body: "sofia-pro", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $fonts_paragraph: "museo-regular", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $letter-spacing: 0.2em;
-$letter-spacing-paragraph: 0.1em;
+$letter-spacing-paragraph: 0.15em;
 $prime_color:#262626;
 $second_color:#002a50;
 $third_color:#0086ff;
+$forth_color:#acacac;
 $color_paragraph:#595959;
 $interline:1.563em;
 
@@ -59,4 +60,30 @@ $interline:1.563em;
 
 .label_button{
   letter-spacing: $letter-spacing-paragraph;
+}
+.hashtag{
+  color:$third_color;
+  letter-spacing: $letter-spacing-paragraph;
+  text-transform: uppercase;
+  line-height:$interline;
+}
+
+.quote{
+  font-style: italic;
+  font-family: $fonts_paragraph;
+  line-height:$interline;
+  letter-spacing: $letter-spacing-paragraph;
+  color:$color_paragraph;
+}
+
+.name{
+  color: $second_color;
+  letter-spacing: $letter-spacing-paragraph;
+  text-transform: uppercase;
+}
+
+.number_servizi{
+  color:$forth_color;
+  letter-spacing: $letter-spacing-paragraph;
+  font-weight: 100;
 }

@@ -31,7 +31,7 @@ $height_frasi: 48.125em;
 
 /* SERVIZI VARIABLE */
 $width_servizi: 100%;
-$height_servizi: 25em;
+$height_servizi: auto;
 
 /* OPINIONI VARIABLE */
 $width_opinioni: 100%;
@@ -103,7 +103,6 @@ body {
       position: relative;
       width: $width_frasi;
       height: $height_frasi;
-      border: 1px solid red;
     }
     #servizi {
       position: relative;

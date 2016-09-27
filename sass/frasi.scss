@@ -6,6 +6,47 @@
 
   .corner{
     height: 100%;
+
+    .nav_frasi_wrapper{
+      @include cols();
+
+      .back_container{
+        @include cell();
+        width:4.375em;
+      }
+      .container_frasi{
+        @include flex();
+
+        .body_frasi{
+          width: 89%;
+
+          .firma{
+            overflow: hidden;
+
+            .hyphen{
+              width: 2.500em;
+              height: 0.313em;
+              background-color: black;
+              float: left;
+              margin-top: 0.65em;
+            }
+
+            .name{
+              float: left;
+              margin-left: 0.750em;
+            }
+
+
+          }
+        }
+
+      }
+      .forward_container{
+        @include cell();
+        width:4.375em;
+      }
+
+    }
   }
 
 }
