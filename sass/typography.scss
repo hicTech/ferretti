@@ -46,9 +46,17 @@ $interline:1.563em;
   letter-spacing: $letter-spacing-paragraph;
   color: $color_paragraph;
   margin-top: 0.625em;
+
+  &.bold{
+    font-weight: bold;
+  }
 }
 
 .label_pappoc{
   color:$third_color;
   text-transform: uppercase;
+}
+
+.label_button{
+  letter-spacing: $letter-spacing-paragraph;
 }
