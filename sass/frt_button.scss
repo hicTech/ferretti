@@ -32,10 +32,18 @@ $frt_btn_animation_time: 0.4s;
   &:hover{
     background-color: #000000;
 
+
     .frt_btn{
       border-color: #0086ff;
       background-color: #0086ff;
       color: white;
+
+      .label_button{
+        color: white;
+      }
+      .icon_button{
+        color: white;
+      }
     }
 
   }
