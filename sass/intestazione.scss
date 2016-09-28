@@ -1,0 +1,23 @@
+
+.intestazione_wrapper {
+  @include cols(jus-between);
+
+  .intestazione_ferretti {
+    @include cell() ;
+      width: 31.938em;
+
+  }
+  .intestazione_bspkn {
+    @include cell();
+    width: 25.938em;
+
+    .container_social_bspkn{
+      text-align: right;
+
+      .icon_social_bspkn{
+        margin-right: 0.625em;
+        color: #002a50;
+      }
+    }
+  }
+}

@@ -35,14 +35,18 @@ $height_servizi: auto;
 
 /* OPINIONI VARIABLE */
 $width_opinioni: 100%;
-$height_opinioni: 25em;
+$height_opinioni: 50em;
 
 /* REALIZZAZIONI VARIABLE */
 $width_realizzazioni: 100%;
-$height_realizzazioni: 77em;
+$height_realizzazioni: auto;
+
+/* INTESTAZIONE VARIABLE */
+$width_intestazione:100%;
+$height_intestazione:3.750em;
 
 /* FOOTER VARIABLE */
-$height_footer: 4em;
+$height_footer: 3.125em;
 
 body {
   font-family: $fonts_body;
@@ -114,19 +118,21 @@ body {
       position: relative;
       width: $width_opinioni;
       height: $height_opinioni;
-      border: 1px solid blue;
     }
     #realizzazioni {
       position: relative;
       width: $width_realizzazioni;
       height: $height_realizzazioni;
-      border: 1px solid green;
+    }
+    #intestazione{
+      position: relative;
+      width: $width_intestazione;
+      height: $height_intestazione;
     }
     .footer {
       position: relative;
       height: $height_footer;
       width: 100%;
-      background-color: #c2c45d;
     }
 
   }

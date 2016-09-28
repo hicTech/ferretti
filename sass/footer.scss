@@ -1,39 +1,41 @@
-$width_label: 15em;
-$width_tel:7em;
-$width_email:7em;
-$width_chiudi: 7em;
+$width_label: 20.375em;
+$width_tel:  9.375em;
+$width_email: 14.375em;
+$width_chiudi: 12.375em;
 
+.container_footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 3.125em;
+  z-index: 999999;
+  .footer_wrapper {
+    background-color: rgb(252,255,255);
+    @include cols();
 
+    .aiuto_footer {
+      @include cell();
+      width: $width_label;
+    }
+    .tel_footer {
+      @include cell();
+      width: $width_tel;
+    }
+    .email_footer {
+      @include cell();
+      width: $width_email;
+    }
+    .flex_footer {
+      @include flex();
+    }
+    .chiudi_footer {
+      @include cell();
+      width: $width_chiudi;
 
-.container_footer{
-
-    .footer_wrapper{
-      @include cols();
-
-      .label{
-        @include cell();
-        border:1px solid black;
-        width:$width_label;
-      }
-      .content_tel{
-        @include cell();
-        border:1px solid black;
-        width:$width_tel;
-      }
-      .content_email{
-        @include cell();
-        border:1px solid black;
-        width:$width_email;
-      }
-      .flex{
-        @include flex();
-        border:1px solid black;
-      }
       .chiudi{
-        @include cell();
-        border:1px solid black;
-        width:$width_chiudi;
+        text-align: right;
       }
     }
+  }
 
 }

@@ -7,6 +7,7 @@ $second_color:#002a50;
 $third_color:#0086ff;
 $forth_color:#acacac;
 $color_paragraph:#595959;
+$color_intestazione: #999999;
 $interline:1.563em;
 
 
@@ -37,6 +38,9 @@ $interline:1.563em;
   }
   &.bold{
     font-weight: bold;
+  }
+  &.blue{
+    color: $third_color;
   }
 
 }
@@ -80,10 +84,42 @@ $interline:1.563em;
   color: $second_color;
   letter-spacing: $letter-spacing-paragraph;
   text-transform: uppercase;
+
+  &.bold{
+    font-weight: bold;
+  }
 }
 
 .number_servizi{
   color:$forth_color;
   letter-spacing: $letter-spacing-paragraph;
   font-weight: 100;
+}
+
+.star{
+  color:$third_color;
+}
+
+.text_intestazione{
+  font-family: $fonts_paragraph;
+  font-size: 0.625em;
+  line-height:$interline;
+  letter-spacing: $letter-spacing-paragraph;
+  color: $color_intestazione;
+
+  &.cookie{
+    color:$second_color;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.footer_text{
+  font-family: $fonts_paragraph;
+  font-size: 0.750em;
+  line-height:$interline;
+  letter-spacing: $letter-spacing-paragraph;
+  color: $color_paragraph;
+  font-weight: bold;
+  width: 100%;
 }
