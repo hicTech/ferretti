@@ -1,27 +1,44 @@
-$fonts_body: "sofia-pro", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$fonts_paragraph: "museo-regular", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$letter-spacing: 0.2em;
-$letter-spacing-paragraph: 0.15em;
-$prime_color:#262626;
-$second_color:#002a50;
-$third_color:#0086ff;
-$forth_color:#acacac;
-$color_paragraph:#595959;
-$color_intestazione: #999999;
-$interline:1.563em;
 
+
+
+$main_font:             "sofia-pro", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary_font:        "museo-regular", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$main_font_size:        16px;
+
+$letter-spacing:            0.2em;
+$letter-spacing-paragraph:  0.15em;
+
+$main_color:    #262626;
+$blue:          #002a50;
+$light_blue:    #0086ff;
+$dark_grey:     #595959;
+$grey:          #999999;
+$light_grey:    #acacac;
+
+
+$interline:       2em;
+
+
+
+
+
+body{
+  font-family: $main_font;
+  font-size: $main_font_size;
+  color: $main_color;
+}
 
 .label_button {
   text-transform: uppercase;
   font-size: 0.875em;
   font-weight: 700;
-  color: $prime_color;
+
   letter-spacing: $letter-spacing;
 }
 
 .icon_button {
   font-size: 1.875em;
-  color:$second_color;
+  color:$blue;
 }
 
 
@@ -29,36 +46,28 @@ $interline:1.563em;
   font-size: 1.750em;
   text-transform: uppercase;
   letter-spacing: $letter-spacing;
-  color: $prime_color;
   line-height: $interline;
 
 
-  &.thin{
-    font-weight: lighter;
-  }
-  &.bold{
-    font-weight: bold;
-  }
+
   &.blue{
-    color: $third_color;
+    color: $light_blue;
   }
 
 }
 
 .paragraph{
-  font-family: $fonts_paragraph;
+  font-family: $secondary_font;
   line-height:$interline;
   letter-spacing: $letter-spacing-paragraph;
-  color: $color_paragraph;
+  color: $dark_grey;
   margin-top: 0.625em;
+  font-size: 0.9em;
 
-  &.bold{
-    font-weight: bold;
-  }
 }
 
 .label_pappoc{
-  color:$third_color;
+  color:$light_blue;
   text-transform: uppercase;
 }
 
@@ -66,7 +75,7 @@ $interline:1.563em;
   letter-spacing: $letter-spacing-paragraph;
 }
 .hashtag{
-  color:$third_color;
+  color:$light_blue;
   letter-spacing: $letter-spacing-paragraph;
   text-transform: uppercase;
   line-height:$interline;
@@ -74,52 +83,128 @@ $interline:1.563em;
 
 .quote{
   font-style: italic;
-  font-family: $fonts_paragraph;
+  font-family: $secondary_font;
   line-height:$interline;
   letter-spacing: $letter-spacing-paragraph;
-  color:$color_paragraph;
+  color:$dark_grey;
 }
 
 .name{
-  color: $second_color;
+  color: $blue;
   letter-spacing: $letter-spacing-paragraph;
   text-transform: uppercase;
 
-  &.bold{
-    font-weight: bold;
-  }
 }
 
 .number_servizi{
-  color:$forth_color;
+  color:$light_grey;
   letter-spacing: $letter-spacing-paragraph;
   font-weight: 100;
 }
 
 .star{
-  color:$third_color;
+  color:$light_blue;
 }
 
 .text_intestazione{
-  font-family: $fonts_paragraph;
+  font-family: $secondary_font;
   font-size: 0.625em;
   line-height:$interline;
   letter-spacing: $letter-spacing-paragraph;
-  color: $color_intestazione;
+  color: $grey;
 
   &.cookie{
-    color:$second_color;
+    color:$blue;
     text-transform: uppercase;
-    font-weight: bold;
   }
 }
 
 .footer_text{
-  font-family: $fonts_paragraph;
+  font-family: $secondary_font;
   font-size: 0.750em;
   line-height:$interline;
   letter-spacing: $letter-spacing-paragraph;
-  color: $color_paragraph;
-  font-weight: bold;
+  color: $dark_grey;
   width: 100%;
 }
+
+
+
+
+
+.font_thin{
+  font-weight: 100;
+}
+
+.font_bold{
+  font-weight: bold;
+}
+
+.font_uppercase{
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+.second_font_100{
+  font-family: $secondary_font;
+  font-weight: 100;
+}
+
+.second_font_200{
+  font-family: $secondary_font;
+  font-weight: 200;
+}
+
+.second_font{
+  font-family: $secondary_font;
+  font-weight: 400;
+}
+
+
+.second_font_500{
+  font-family: $secondary_font;
+  font-weight: 500;
+}
+
+.second_font_600{
+  font-family: $secondary_font;
+  font-weight: 600;
+}
+
+
+
+
+
+.blue{
+  color: $blue;
+}
+
+
+.light_blue{
+  color: $light_blue;
+}
+
+
+.dark_grey{
+  color: $dark_grey;
+}
+
+
+.grey{
+  color: $grey;
+}
+
+
+.light_grey{
+  color: $light_grey;
+}
+
+
+.white{
+  color: white;
+}
+

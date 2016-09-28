@@ -1,6 +1,6 @@
 $frt_btn_padding_70h: 2.2em 0.8em;
 
-$frt_btn_border_thickness: 0.125em;
+$frt_btn_border_thickness: 0.20em;
 $frt_btn_border_color: #262626;
 $frt_btn_2nd_border_thickness: 0.313em;
 
@@ -26,6 +26,11 @@ $frt_btn_animation_time: 0.4s;
     left:$frt_btn_2nd_border_thickness;
     width: 100%;
     text-transform: uppercase;
+
+    .icon_button{
+      margin-right: 0.5em;
+    }
+
   }
 
   &:hover{

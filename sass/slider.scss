@@ -1,4 +1,19 @@
 
 #slider{
+
+  .container_slider_img{
+    position: relative;
+    font-size: 3.5em;
+
+    .slider_slogan{
+      position: absolute;
+      bottom: 1em;
+      left: 1em;
+      width: 62%;
+      line-height: 0.9em;
+
+
+    }
+  }
   
 }

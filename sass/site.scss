@@ -1,4 +1,4 @@
-$size_text_body: 16px;
+
 $width_container_header: 100%;
 
 /* HEADER VARIABLE */
@@ -49,8 +49,7 @@ $height_intestazione:3.750em;
 $height_footer: 3.125em;
 
 body {
-  font-family: $fonts_body;
-  font-size: $size_text_body;
+
   margin: 0px;
 
   .wrapper {

@@ -169,6 +169,7 @@ $size_icon_close:2.500em;
 .padder_nav_row {
   padding-left: $padding_nav_row;
 
+
   .item_title_menu {
 
   }
@@ -179,6 +180,11 @@ $size_icon_close:2.500em;
     float: left;
     margin-top: 0.4em;
 
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
   }
   .item_menu{
 
@@ -186,16 +192,12 @@ $size_icon_close:2.500em;
 
   &:hover{
     .hyphen_menu{
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
       margin-right: 1em;
       width: 1.500em;
 
     }
     .item_menu {
-      color: $third_color;
+      color: $light_blue;
     }
   }
 }

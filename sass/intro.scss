@@ -41,7 +41,7 @@ $position_logo_bianco: 28.563em;
             bottom: 0em;
             padding: 0 1.875em;
             .title_chisiamo {
-
+              line-height: 1.1em;
             }
             .paragraph_chisiamo {
 
@@ -61,10 +61,6 @@ $position_logo_bianco: 28.563em;
         .button_intro {
           @include cell();
           width: 17em;
-
-          .icon_button_intro {
-            margin-right: 0.214em;
-          }
         }
 
       }
