@@ -1,0 +1,36 @@
+
+
+
+
+.frt_proposte_case{
+  float: left;
+  margin: 22px;
+  width: 400px;
+
+
+  .proposta_img{
+    position: relative;
+
+    .frt_proposte_case_button_container{
+      text-align: center;
+      width: 200px;
+      overflow: auto;
+      position: absolute;
+      z-index: 44;
+      bottom: -45px;
+      left: 90px;
+      padding: 10px 10px;
+    }
+  }
+
+  .frt_case{
+    margin: 0px 0px 0px -5px;
+    width: 396px;
+
+    .frt_case_wrapper{
+      .frt_case_content{
+        padding: 50px 30px !important;
+      }
+    }
+  }
+}
