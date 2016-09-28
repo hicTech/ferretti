@@ -167,10 +167,40 @@ $size_icon_close:2.500em;
 
 
 .padder_nav_row {
-  padding: $padding_nav_row;
+  padding-left: $padding_nav_row;
 
-  .item {
+  .item_title_menu {
 
   }
+  .hyphen_menu{
+    width: 0;
+    height: 0.313em;
+    background-color: black;
+    float: left;
+    margin-top: 0.4em;
+
+  }
+  .item_menu{
+
+  }
+
+  &:hover{
+    .hyphen_menu{
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      margin-right: 1em;
+      width: 1.500em;
+
+    }
+    .item_menu {
+      color: $third_color;
+    }
+  }
+}
+
+.padder_nav_row_item{
+  cursor: pointer;
 }
 
