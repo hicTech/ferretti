@@ -84,7 +84,7 @@ $frt_input_2nd_border_thickness: 3px;
       }
 
 
-      &:after{
+      &.select:after{
         content: "V";
         position: absolute;
         right: 30px;
