@@ -1,9 +1,27 @@
-$width_archivi_top: 100%;
+$width_archivi: 100%;
 $height_archivi_top: auto;
+
+$width_in_costruzione: 100%;
+$height_in_costruzione: auto;
 
 
 #archivi_top {
   position: relative;
-  width: $width_archivi_top;
+  width: $width_archivi;
   height: $height_archivi_top;
+}
+
+#archivi_presentazione{
+  position: relative;
+  width: $width_archivi;
+  height:17.500em;
+}
+#archivi_presentazione.section{
+  margin-bottom: 7.063em;
+}
+
+#in_costruzione{
+  position: relative;
+  width: $width_in_costruzione;
+  height: $height_in_costruzione;
 }

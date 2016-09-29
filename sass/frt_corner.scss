@@ -4,6 +4,7 @@ $corner_border:3px solid #272727;
 
 .corner{
   width:100%;
+  height:100%;
   position: relative;
   padding-right:3px;
 
@@ -41,6 +42,13 @@ $corner_border:3px solid #272727;
 
   }
   &.white{
-    border:3px solid white;
+    &:after {
+      border-top: 3px solid white;
+      border-left: 3px solid white;
+    }
+    &:before {
+      border-right: 3px solid white;
+      border-bottom: 3px solid white;
+    }
   }
 }

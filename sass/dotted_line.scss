@@ -7,4 +7,11 @@
   height:3px;
   background-image: url("../img/line.png");
   z-index:1;
+
+  &.bottom{
+    top:100%;
+  }
+  &.top{
+    top:0%;
+  }
 }
