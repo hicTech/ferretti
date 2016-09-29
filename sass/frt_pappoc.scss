@@ -1,46 +1,64 @@
 
 
-$width_pappoc:45px;
+$width_pappoc:2.188em;
 $height_pappoc:15px;
 $color_pappoc: #252525;
-$font_pappoc:12px Arial, sans-serif;
-
-.pappoc_round{
-  position:relative;
-  width:$width_pappoc;
-  height:$height_pappoc;
-  z-index: 1;
+/*$font_pappoc:12px Arial, sans-serif;*/
 
 
-  .numberCircle {
-    border-radius: 50%;
-    width: $height_pappoc;
+
+.frt_pappoc {
+  .pappoc_round {
+    position: relative;
+    width: $width_pappoc;
     height: $height_pappoc;
-    z-index: 3;
-    background: #fff;
-    border: 2px solid $color_pappoc;
-    color: $color_pappoc;
-    text-align: center;
+    z-index: 1;
+    float: left;
 
-    font:$font_pappoc;
-    line-height:$height_pappoc+1;
-  }
-
-  .pappoc_line{
-    position:absolute;
-    width:100%;
-    height:2px;
-    top:50%;
-    background:$color_pappoc;
-    z-index: -1;
-  }
-  &.white{
     .numberCircle {
-      border: 2px solid white;
-    }
-    .pappoc_line{
-      background:white;
+      border-radius: 50%;
+      width: $height_pappoc;
+      height: $height_pappoc;
+      z-index: 3;
+      background: #fff;
+      border: 2px solid $color_pappoc;
+      color: $color_pappoc;
+      text-align: center;
+
+      font-size: 0.750em;
+      line-height: $height_pappoc;
     }
 
+    .pappoc_line {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 50%;
+      background: $color_pappoc;
+      z-index: -1;
+    }
+    &.white {
+      .numberCircle {
+        border: 2px solid white;
+      }
+      .pappoc_line {
+        background: white;
+      }
+
+    }
+  }
+
+  .label_pappoc{
+    margin-left: 4em;
   }
 }
+
+
+/*
+<div class="frt_pappoc">
+  <div class="pappoc_round">
+    <div class="numberCircle">F</div>
+    <div class="pappoc_line"></div>
+  </div>
+<div class="label_pappoc">FIDUCIA</div>
+</div>*/
