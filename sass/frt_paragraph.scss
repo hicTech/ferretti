@@ -1,0 +1,143 @@
+$frt_paragraph_padding: 1.9em 2.5em;
+$frt_paragraph_big_padding: 4em 5em;
+
+$frt_paragraph_border_thickness: 3px;
+$frt_paragraph_border_color: #262626;
+$frt_paragraph_2nd_border_thickness: 5px;
+
+$frt_paragraph_animation: ease-out;
+$frt_paragraph_animation_time: 0.4s;
+
+
+.frt_paragraph{
+
+  background-image: url("../img/strips.png");
+  position:relative;
+
+
+  .frt_paragraph_wrapper{
+    border: solid $frt_paragraph_border_thickness $frt_paragraph_border_color;
+    background-color:white;
+    position:relative;
+    top:$frt_paragraph_2nd_border_thickness*(-1);
+    left:$frt_paragraph_2nd_border_thickness;
+    width: 100%;
+
+    .frt_paragraph_content{
+      padding: $frt_paragraph_padding;
+    }
+  }
+
+
+
+
+  /*
+              _   _
+   ___  _ __ | |_(_) ___  _ __  ___
+  / _ \| '_ \| __| |/ _ \| '_ \/ __|
+ | (_) | |_) | |_| | (_) | | | \__ \
+  \___/| .__/ \__|_|\___/|_| |_|___/
+       |_|
+
+  */
+  &.inverse{
+    .frt_paragraph_wrapper {
+      left: (($frt_paragraph_border_thickness * 2) + $frt_paragraph_2nd_border_thickness ) *(-1);
+    }
+  }
+
+  &.no_shadow{
+    .frt_paragraph_wrapper {
+      left:0px !important;
+      top:0px !important;
+    }
+  }
+
+  &.no_border{
+    .frt_paragraph_wrapper {
+      border: none !important;
+      left:0px !important;
+      top:0px !important;
+    }
+  }
+
+  &.no_padding{
+    .frt_paragraph_wrapper {
+      .frt_paragraph_content{
+        padding: 0px !important;
+      }
+    }
+  }
+
+
+  &.big_padding{
+    .frt_paragraph_wrapper {
+      .frt_paragraph_content{
+        padding: $frt_paragraph_big_padding !important;
+      }
+    }
+  }
+
+
+
+
+
+
+
+}
+
+
+
+
+.frt_subtitle{
+  @extend .font_thin;
+  font-size: 1.750em;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing;
+  line-height: $interline;
+}
+
+.frt_title{
+  @extend .frt_subtitle;
+  @extend .font_bold;
+}
+
+
+.frt_text{
+  font-family: $secondary_font;
+  line-height:$interline;
+  letter-spacing: $letter-spacing-paragraph;
+  color: $dark_grey;
+  margin-top: 0.625em;
+  font-size: 0.9em;
+}
+
+
+
+
+
+/*
+
+
+
+
+<div class="frt_case">
+        <div class="frt_case_wrapper">
+            <div class="frt_case_content">
+
+                <div class="title"></div>
+                <div class="subtitle"></div>
+                <div class="paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+*/
+
+

@@ -1,10 +1,20 @@
+$frt_form_row_vertical_margin: 2em;
+
+
+$frt_input_border_thickness: 4px;
+$frt_input_2nd_border_thickness: 3px;
+
+
+
+
+
 
 .frt_form {
 
   .frt_form_row {
-    margin-bottom: 15px;
+    margin-bottom: $frt_form_row_vertical_margin;
     .frt_form_label {
-      padding-bottom: 0.4em;
+
     }
 
     .frt_form_input {
@@ -12,14 +22,18 @@
       position: relative;
       display: inline-block;
       clear: both;
+      margin: $frt_input_2nd_border_thickness;
+
 
       .frt_input[type="text"], select {
         padding: 1.15em 2em;
-        border: solid 3px #999;
+        border: solid $frt_input_border_thickness #999;
         width: 25em;
         position: relative;
-        top: -3px;
-        left: 3px;
+        top: $frt_input_2nd_border_thickness * (-1);
+        left: $frt_input_2nd_border_thickness;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
 
         &:focus {
           border-color: #363636;
@@ -28,7 +42,7 @@
         }
 
         &.highlight {
-          border-color: #ba363d;
+          border-color: #ec1a23;
           outline-width: 0;
           outline: none;
         }
@@ -39,7 +53,7 @@
         box-shadow: inset 0px 0px 0px 4px #999;
         border-radius: 0px;
         border: none;
-        padding:20px 150px 20px 40px;
+        padding:25px 150px 25px 40px;
       }
 
 
@@ -48,7 +62,7 @@
       .frt_input[type="checkbox"]{
         width: 1.2em;
         height: 1.2em;
-        border: solid 3px #999;
+        border: solid $frt_input_border_thickness #999;
         position: relative;
         top: -3px;
         left: 3px;
@@ -66,13 +80,42 @@
       textarea{
         padding: 0px;
         margin: 0px 0px 1px 0px;
+
+      }
+
+
+      &:after{
+        content: "V";
+        position: absolute;
+        right: 30px;
+        height: 40%;
+        top: 30%;
       }
 
     }
 
     .frt_form_input_label{
-      margin: -2px 0px 0px 30px;
+      margin: -2px 0px 0px 50px;
     }
+
+  }
+
+
+
+
+
+  /*
+              _   _
+   ___  _ __ | |_(_) ___  _ __  ___
+  / _ \| '_ \| __| |/ _ \| '_ \/ __|
+ | (_) | |_) | |_| | (_) | | | \__ \
+  \___/| .__/ \__|_|\___/|_| |_|___/
+       |_|
+
+  */
+
+
+  .full_width{
 
   }
 

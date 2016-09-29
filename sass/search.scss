@@ -1,0 +1,21 @@
+.search_row {
+  @include flex();
+
+
+  .frt_form{
+
+    width: 55em;
+    margin: 0px auto;
+
+
+    .frt_form_row{
+
+      float: left;
+      width: 40%;
+
+    }
+  }
+
+
+
+}

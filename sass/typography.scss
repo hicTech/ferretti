@@ -42,29 +42,9 @@ body{
 }
 
 
-.title{
-  font-size: 1.750em;
-  text-transform: uppercase;
-  letter-spacing: $letter-spacing;
-  line-height: $interline;
 
 
 
-  &.blue{
-    color: $light_blue;
-  }
-
-}
-
-.paragraph{
-  font-family: $secondary_font;
-  line-height:$interline;
-  letter-spacing: $letter-spacing-paragraph;
-  color: $dark_grey;
-  margin-top: 0.625em;
-  font-size: 0.9em;
-
-}
 
 .label_pappoc{
   color:$light_blue;

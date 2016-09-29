@@ -1,0 +1,25 @@
+.contact_row {
+  @include flex();
+
+
+  .frt_form{
+
+    width: 50em;
+    margin: 0px auto;
+    .frt_form_row{
+
+      .frt_form_input{
+        .frt_input._45em{
+          width: 45em !important;
+        }
+      }
+
+      .frt_form_input_label{
+        font-size: 0.9em;
+      }
+    }
+  }
+
+
+
+}
