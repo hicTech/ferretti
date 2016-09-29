@@ -1,13 +1,12 @@
-$corner_border:2px solid #272727;
+$corner_border:3px solid #272727;
 
 
 
 .corner{
   width:100%;
-  border: $corner_border;
   position: relative;
   padding-right:3px;
-  z-index: -1;
+
 
   .corner_content {
     padding: 30px;
@@ -17,30 +16,31 @@ $corner_border:2px solid #272727;
   &:after{
     content: "";
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: 30px;
     padding: 0;
     margin: 0;
-    background-color: white;
     position: absolute;
-    right: 30px;
-    top: 30px;
-    z-index: -1;
+    left: 0px;
+    top: 0px;
+    border-top: $corner_border;
+    border-left:$corner_border;
   }
   &:before{
     content: "";
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 30px;
+    height: 30px;
     padding: 0;
     margin: 0;
-    background-color: white;
     position: absolute;
-    right: -30px;
-    top: -30px;
-    z-index: -1;
+    right: 0px;
+    bottom: 0px;
+    border-right: $corner_border;
+    border-bottom:$corner_border;
+
   }
   &.white{
-    border:2px solid white;
+    border:3px solid white;
   }
 }
