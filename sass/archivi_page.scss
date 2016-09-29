@@ -4,6 +4,9 @@ $height_archivi_top: auto;
 $width_in_costruzione: 100%;
 $height_in_costruzione: auto;
 
+$width_instagram: 100%;
+$height_instagram:60.125em;
+
 
 #archivi_top {
   position: relative;
@@ -24,4 +27,10 @@ $height_in_costruzione: auto;
   position: relative;
   width: $width_in_costruzione;
   height: $height_in_costruzione;
+}
+
+#archivi_instagram{
+  position: relative;
+  width: $width_instagram;
+  height: $height_instagram;
 }

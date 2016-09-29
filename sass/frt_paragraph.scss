@@ -110,6 +110,10 @@ $frt_paragraph_animation_time: 0.4s;
   color: $dark_grey;
   margin-top: 0.625em;
   font-size: 0.9em;
+
+  &.force_main_font{
+    font-family: $main_font;
+  }
 }
 
 
