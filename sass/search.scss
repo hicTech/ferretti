@@ -4,14 +4,23 @@
 
   .frt_form{
 
-    width: 55em;
+    width: 52em;
     margin: 0px auto;
+    overflow: auto;
 
 
     .frt_form_row{
 
       float: left;
-      width: 40%;
+
+
+      .frt_form_input{
+        margin: 5px 10px !important;
+        .frt_input{
+          width: 24em !important;
+          letter-spacing: 0.1em;
+        }
+      }
 
     }
   }
