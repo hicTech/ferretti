@@ -98,7 +98,11 @@ $frt_paragraph_animation_time: 0.4s;
 }
 
 .frt_title{
-  @extend .frt_subtitle;
+  @extend .font_thin;
+  font-size: 1.750em;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing;
+  line-height: $interline;
   @extend .font_bold;
 }
 
@@ -110,34 +114,29 @@ $frt_paragraph_animation_time: 0.4s;
   color: $dark_grey;
   margin-top: 0.625em;
   font-size: 0.9em;
+
 }
 
 
 
 
 
+
 /*
-
-
-
-
-<div class="frt_case">
-        <div class="frt_case_wrapper">
-            <div class="frt_case_content">
-
-                <div class="title"></div>
-                <div class="subtitle"></div>
-                <div class="paragraph">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                      enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                </div>
-
-            </div>
+<div class="frt_paragraph no_border no_padding">
+    <div class="frt_paragraph_wrapper">
+        <div class="frt_paragraph_content">
+            <div class="frt_subtitle">con voi dal 1967,</div>
+            <div class="frt_title">siamo di casa</div>
+            <p class="frt_text">
+                Ferretticasa lavora insieme a voi
+                per le migliori proposte in termini di costruzione e arredamento.
+                Abbiamobisogno di conoscere vostri bisogni e di guardare sempre di più a
+                soluzioni tecniche e di design che siano innovative e ottimali, ed è
+                quello che facciamo da sessant'anni con lealtà e rispetto.
+            </p>
         </div>
     </div>
-
-
+</div>
 */
-
 
