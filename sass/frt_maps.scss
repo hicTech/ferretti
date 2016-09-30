@@ -35,6 +35,37 @@
     background-color: rgba(252, 255, 255, 0.8);
 
 
+    .layout_wrapper{
+      @include rows();
+
+      .layout_top{
+        @include cell();
+        height:33%;
+
+        .container_title_layout{
+          position: absolute;
+          bottom: 1.250em;
+          padding: 0px 1.250em;
+        }
+      }
+      .layout_bottom{
+        @include cell();
+        height:67%;
+
+
+        .layout_bottom_wrapper{
+          @include rows();
+
+
+          .container_item_layout_bottom{
+            @include cell();
+            height: 30px;
+            padding: 0px 1.250em;
+          }
+
+        }
+      }
+    }
   }
 
 

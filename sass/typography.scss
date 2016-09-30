@@ -1,28 +1,20 @@
+$main_font: "sofia-pro", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary_font: "museo-regular", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$main_font_size: 16px;
 
+$letter-spacing: 0.2em;
+$letter-spacing-paragraph: 0.15em;
 
+$main_color: #262626;
+$blue: #002a50;
+$light_blue: #0086ff;
+$dark_grey: #595959;
+$grey: #999999;
+$light_grey: #acacac;
 
-$main_font:             "sofia-pro", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$secondary_font:        "museo-regular", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$main_font_size:        16px;
+$interline: 2em;
 
-$letter-spacing:            0.2em;
-$letter-spacing-paragraph:  0.15em;
-
-$main_color:    #262626;
-$blue:          #002a50;
-$light_blue:    #0086ff;
-$dark_grey:     #595959;
-$grey:          #999999;
-$light_grey:    #acacac;
-
-
-$interline:       2em;
-
-
-
-
-
-body{
+body {
   font-family: $main_font;
   font-size: $main_font_size;
   color: $main_color;
@@ -38,153 +30,139 @@ body{
 
 .icon_button {
   font-size: 1.875em;
-  color:$blue;
+  color: $blue;
 }
 
-
-
-
-
-
-.label_pappoc{
-  color:$light_blue;
+.label_pappoc {
+  color: $light_blue;
   text-transform: uppercase;
 }
 
-.label_button{
+.label_button {
   letter-spacing: $letter-spacing-paragraph;
-}
-.hashtag{
-  color:$light_blue;
-  letter-spacing: $letter-spacing-paragraph;
-  text-transform: uppercase;
-  line-height:$interline;
 }
 
-.quote{
+.hashtag {
+  color: $light_blue;
+  letter-spacing: $letter-spacing-paragraph;
+  text-transform: uppercase;
+  line-height: $interline;
+}
+
+.quote {
   font-style: italic;
   font-family: $secondary_font;
-  line-height:$interline;
+  line-height: $interline;
   letter-spacing: $letter-spacing-paragraph;
-  color:$dark_grey;
+  color: $dark_grey;
 }
 
-.name{
+.name {
   color: $blue;
   letter-spacing: $letter-spacing-paragraph;
   text-transform: uppercase;
 
 }
 
-.number_servizi{
-  color:$light_grey;
+.number_servizi {
+  color: $light_grey;
   letter-spacing: $letter-spacing-paragraph;
   font-weight: 100;
 }
 
-.star{
-  color:$light_blue;
+.star {
+  color: $light_blue;
 }
 
-.text_intestazione{
+.text_intestazione {
   font-family: $secondary_font;
   font-size: 0.625em;
-  line-height:$interline;
+  line-height: $interline;
   letter-spacing: $letter-spacing-paragraph;
   color: $grey;
 
-  &.cookie{
-    color:$blue;
+  &.cookie {
+    color: $blue;
     text-transform: uppercase;
   }
 }
 
-.footer_text{
+.footer_text {
   font-family: $secondary_font;
   font-size: 0.750em;
-  line-height:$interline;
+  line-height: $interline;
   letter-spacing: $letter-spacing-paragraph;
   color: $dark_grey;
   width: 100%;
 }
 
-
-
-
-
-.font_thin{
+.font_thin {
   font-weight: 100;
 }
 
-.font_bold{
+.font_bold {
   font-weight: bold;
 }
 
-.font_uppercase{
+.font_uppercase {
   text-transform: uppercase;
 }
 
+.font_spacing_paragraph {
+  letter-spacing: $letter-spacing-paragraph;
+}
 
+.font_spacing {
+  letter-spacing: $letter-spacing;
+}
 
-
-
-
-.second_font_100{
+.second_font_100 {
   font-family: $secondary_font;
   font-weight: 100;
 }
 
-.second_font_200{
+.second_font_200 {
   font-family: $secondary_font;
   font-weight: 200;
 }
 
-.second_font{
+.second_font {
   font-family: $secondary_font;
   font-weight: 400;
 }
 
-
-.second_font_500{
+.second_font_500 {
   font-family: $secondary_font;
   font-weight: 500;
 }
 
-.second_font_600{
+.second_font_600 {
   font-family: $secondary_font;
   font-weight: 600;
 }
 
-
-
-
-
-.blue{
+.blue {
   color: $blue;
 }
 
-
-.light_blue{
+.light_blue {
   color: $light_blue;
 }
 
-
-.dark_grey{
+.dark_grey {
   color: $dark_grey;
 }
 
-
-.grey{
+.grey {
   color: $grey;
 }
 
-
-.light_grey{
+.light_grey {
   color: $light_grey;
 }
 
-
-.white{
-  color: white!important;
+.white {
+  color: white !important;
 }
+
 
