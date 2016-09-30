@@ -13,7 +13,8 @@
 
 
 
-$frt_img: 10px;
+$frt_img_canvas_size: 10px;
+$frt_img_big_canvas_size: 30px;
 
 .frt_img{
   background-image: url("../img/strips.png");
@@ -42,8 +43,8 @@ $frt_img: 10px;
       width: 100%;
       height: 100%;
       background-image: url("../img/strips.png");
-      top: $frt_img * (-1);
-      left: $frt_img;
+      top: $frt_img_canvas_size * (-1);
+      left: $frt_img_canvas_size;
     }
 
     &.reverse:after{
@@ -69,8 +70,8 @@ $frt_img: 10px;
       max-width: 100%;
       max-height: 100%;
       position: relative;
-      top: $frt_img * (-1);
-      left: $frt_img;
+      top: $frt_img_canvas_size * (-1);
+      left: $frt_img_canvas_size;
     }
   }
 
@@ -94,15 +95,42 @@ $frt_img: 10px;
   }
 
 
+  &.bigcanvas{
+
+    .frt_img_wrapper {
+
+      &:after {
+        top: $frt_img_big_canvas_size * (-1);
+        left: $frt_img_big_canvas_size;
+      }
+
+      img {
+        top: $frt_img_big_canvas_size * (-1);
+        left: $frt_img_big_canvas_size;
+      }
+    }
+
+    &.flip{
+      .frt_img_wrapper{
+
+        img{
+          left: $frt_img_big_canvas_size * (-1) !important;
+        }
+      }
+
+    }
+  }
+
+
   &.flip{
     .frt_img_wrapper{
       &:after{
 
-        left: $frt_img * (-1);
+        left: $frt_img_canvas_size * (-1);
       }
       img{
 
-        left: $frt_img * (-1);
+        left: $frt_img_canvas_size * (-1);
       }
     }
   }
