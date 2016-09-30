@@ -1,9 +1,9 @@
-
-
+$padding_layout: 0em 2.75em;
+$height_maps:44.375em;
 
 .frt_maps{
   position: relative;
-  height: 44.375em;
+  height: $height_maps;
 
   #map{
    height:100%;
@@ -45,7 +45,7 @@
         .container_title_layout{
           position: absolute;
           bottom: 1.250em;
-          padding: 0px 1.250em;
+          padding: $padding_layout;
         }
       }
       .layout_bottom{
@@ -59,8 +59,8 @@
 
           .container_item_layout_bottom{
             @include cell();
-            height: 30px;
-            padding: 0px 1.250em;
+            height: 1.875em;
+            padding: $padding_layout;
           }
 
         }

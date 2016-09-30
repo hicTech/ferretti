@@ -1,0 +1,57 @@
+
+.frt_plus {
+  width: 100%;
+  height: 100%;
+
+  .frt_plus_wrapper {
+    @include rows();
+
+    .content_icon_frt_plus {
+      @include cell();
+      height: 40%;
+    }
+
+    .label_frt_plus{
+      @include cell();
+      height: 60%;
+
+      .container_label_frt_plus{
+        text-align: center;
+
+        .label_plus{
+          font-size: 0.8em;
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+/* ESEMPIO HTML */
+/*
+
+<div class="container_plus" style="width: 125px;height: 120px; position: relative;">
+  <div class="frt_plus">
+    <div class="EXTENDER">
+      <div class="frt_plus_wrapper">
+        <div class="content_icon_frt_plus">
+          <div class="EXTENDER">
+            <div class="PADDER-CENTER">
+              <img src="img/classe_energetica.png">
+            </div>
+          </div>
+        </div>
+        <div class="label_frt_plus">
+          <div class="container_label_frt_plus">
+            <div class="label_plus light_blue font_uppercase font_thin font_spacing_paragraph">Classe<br> energetica A</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+*/
+
