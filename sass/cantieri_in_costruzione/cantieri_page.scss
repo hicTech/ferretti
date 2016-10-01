@@ -13,6 +13,17 @@ $height_instagram:60.125em;
 $width_caratteristiche:100%;
 $height_caratteristiche:66.125em;
 
+$width_carousel_cantieri:100%;
+$height_carousel_cantieri: auto;
+
+$width_soluzioni_button:100%;
+$height_soluzioni_button:18em;
+
+
+$width_cantieri_instagram: 100%;
+$height_cantieri_instagram:60.125em;
+
+
 $margin_bottom: 6.063em;
 
 
@@ -41,6 +52,38 @@ $margin_bottom: 6.063em;
   position: relative;
   width: $width_caratteristiche;
   height: $height_caratteristiche;
+}
+
+#carousel_cantieri {
+  position: relative;
+  width: $width_carousel_cantieri;
+  height: $height_carousel_cantieri;
+}
+
+#soluzioni_button_title{
+  position: relative;
+  width: $width_soluzioni_button;
+  height: $height_soluzioni_button;
+}
+#soluzioni_button_title.section{
+  margin-bottom: 7.063em;
+}
+
+#container_schedule{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#container_carica_altro_btn{
+  width: 100%;
+  height: 9.375em;
+  position: relative;
+}
 
 
+#archivi_instagram{
+  position: relative;
+  width: $width_cantieri_instagram;
+  height: $height_cantieri_instagram;
 }

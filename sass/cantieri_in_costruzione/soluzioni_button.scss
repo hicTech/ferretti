@@ -1,0 +1,42 @@
+
+
+.soluzioni_button_wrapper{
+  @include rows();
+
+  .title_soluzioni{
+    @include cell();
+    height: 60%;
+
+    .padding_title_top{
+      margin-top: 1.375em;
+    }
+  }
+  .button_soluzioni{
+    @include cell();
+    height: 40%;
+
+
+
+      .container_button_soluzioni_wrapper {
+        @include cols(jus-center);
+
+        .container_button {
+          @include cell();
+          width: 17em;
+
+
+        }
+        .container_button_small {
+          @include cell();
+          width: 11em;
+
+          .small{
+            width: 9em;
+          }
+        }
+
+      }
+    }
+
+
+}

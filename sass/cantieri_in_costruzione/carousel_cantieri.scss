@@ -1,0 +1,47 @@
+
+.container_nav_cantieri {
+  width: 70%;
+  height: 75%;
+
+  .corner {
+    height: 100%;
+
+    .nav_cantieri_wrapper {
+      @include cols();
+
+      .back_container {
+        @include cell();
+        width: 4.375em;
+      }
+      .container_cantieri {
+        @include flex();
+
+        .body_cantieri {
+          position: relative;
+          width: 89%;
+          height: 70%;
+
+          .carousel_title{
+            float: right;
+          }
+          .container_text_nav_cantieri{
+            width:auto;
+            height:auto;
+            position: absolute;
+            bottom: 0px;
+
+            .frt_text,.frt_subtitle{
+              line-height: 1em;
+            }
+                     }
+        }
+      }
+      .forward_container {
+        @include cell();
+        width: 4.375em;
+      }
+
+    }
+  }
+
+}
