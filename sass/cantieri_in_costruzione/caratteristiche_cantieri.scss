@@ -1,0 +1,49 @@
+.caratteristiche_corner{
+  width:80%;
+  height:95%;
+
+  .corner{
+    .container_caratteristiche{
+      width:80%;
+      height:90%;
+      position: relative;
+
+      .wrapper_container_caratteristiche{
+        @include rows();
+
+        .container_plus{
+          @include cell();
+          height: 37%;
+
+          .container_plus_wrapper{
+            @include rows();
+
+            .plus_row{
+              @include cell();
+              height:50%;
+
+              .wrapper_plus_row{
+                @include cols(jus-center);
+
+                .item_plus{
+                  width: 13.813em;
+                  position: relative;
+
+
+                  .container_plus_item{
+                    width: 100%;
+                    height: 85%;
+                    position: relative;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .container_text_caratteristiche{
+          @include flex();
+        }
+      }
+    }
+  }
+}

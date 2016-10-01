@@ -1,57 +1,61 @@
-@import "mediaquery.scss";
-@import "grid.scss";
-@import "flexScaffolding.scss";
+@import "lib/mediaquery";
+@import "lib/grid";
+@import "lib/flexScaffolding";
 
 @import "typography.scss";
-@import "site.scss";
 
-@import "header.scss";
-@import "slider.scss";
-@import "intro.scss";
-@import "mission.scss";
-@import "realizzazioni.scss";
-@import "footer.scss";
+@import "home/site";
+@import "home/header";
+@import "home/slider";
+@import "home/intro";
+@import "home/mission";
+@import "home/realizzazioni";
+@import "home/footer";
+
 @import "menu.scss";
-@import "carousel.scss";
-@import "arredamenti";
-@import "frasi";
-@import "servizi";
-@import "opinioni";
-@import "intestazione";
+@import "home/carousel";
+@import "home/arredamenti";
+@import "home/frasi";
+@import "home/servizi";
+@import "home/opinioni";
+@import "home/intestazione";
 @import "contact";
 @import "search";
 
 
 /* ARCHIVI PAGE */
 
-
-@import "archivi_page.scss";
-@import "archivi_top.scss";
-@import "archivi_presentazione";
-@import "in_costruzione";
-
+@import "archivi/archivi_page";
+@import "archivi/archivi_top";
+@import "archivi/archivi_presentazione";
+@import "archivi/in_costruzione";
 
 
+/* CANTIERE IN COSTRUZIONE PAGE */
+@import "cantieri_in_costruzione/cantieri_page";
+@import "cantieri_in_costruzione/cantieri_top";
+@import "cantieri_in_costruzione/descrizione_cantieri";
+@import "cantieri_in_costruzione/caratteristiche_cantieri";
 
 
-@import "_normalize.scss";
-@import "frt_button.scss";
+
+@import "lib/_normalize";
+@import "frt_modules/frt_button";
+@import "frt_modules/frt_paragraph";
+@import "frt_modules/frt_images";
+@import "frt_modules/frt_guarda_paragraph";
+@import "frt_modules/frt_mediaObject";
 
 
-@import "frt_paragraph";
-@import "frt_images.scss";
-@import "frt_guarda_paragraph.scss";
-@import "frt_mediaObject";
+@import "frt_modules/frt_pappoc";
+@import "frt_modules/frt_corner";
+@import "frt_modules/dotted_line";
+@import "frt_modules/frt_form";
+@import "frt_modules/frt_plus";
 
 
-@import "frt_pappoc";
-@import "frt_corner";
-@import "dotted_line";
-@import "frt_form";
-
-
-@import "frt_maps";
-@import "frt_instagram";
+@import "frt_modules/frt_maps";
+@import "frt_modules/frt_instagram";
 
 
 

@@ -1,0 +1,84 @@
+
+
+
+
+
+
+.container_section {
+
+  .container_pappoc_long{
+    width:100%;
+    height: 54%;
+    position: absolute;
+    top: 6em;
+
+    .wrapper_pappoc_long{
+      @include rows();
+
+      .container_pappoc{
+        @include cell();
+        height:33%;
+
+        .pappoc_and_label{
+          width: 90%;
+          height:100%;
+
+          .label_pappoc{
+            position: relative;
+            left: 2.500em;
+            top: 2.188em
+          }
+
+          .frt_pappoc {
+            .pappoc_round {
+              position: absolute;
+              width: 100%;
+              top:50%;
+              height: 1.563em;
+
+              .numberCircle{
+                background-color: transparent;
+                width: 1.563em;
+                height: 1.563em;
+                line-height: 1.563em;
+                font-size: 1em;
+              }
+              .pappoc_line{
+                left: 1.75em;
+
+                &.first{
+                  width: 75%;
+                }
+                &.second{
+                  width: 50%;
+                }
+                &.third{
+                  width: 25%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .container_button_cantieri_top{
+    width:100%;
+    height:6em;
+    position: absolute;
+    bottom:-3.625em;
+
+    .container_button_cantieri_top_wrapper{
+      @include cols(jus-center);
+
+      .button_cantieri_top {
+        @include cell();
+        width: 17em;
+
+
+
+      }
+
+    }
+  }
+}

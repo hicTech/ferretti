@@ -1,0 +1,25 @@
+$width_descrizione_cantieri_right: 61.803398874985468379271708299583%;
+$width_descrizione_cantieri_left : 38.196601125014531620728291700417%;
+
+
+.container_section{
+  .wrapper_descrizione_cantieri{
+    @include cols();
+
+    .descrizione_cantieri_left{
+      @include cell();
+      width: $width_descrizione_cantieri_left;
+
+      .container_logo_il_palazzo_del_borgo{
+        width:90%;
+        height: 90%;
+        .container_img{
+        }
+      }
+    }
+    .descrizione_cantieri_right {
+      @include cell();
+      width: $width_descrizione_cantieri_right;
+    }
+  }
+}

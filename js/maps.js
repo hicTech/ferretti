@@ -12,9 +12,9 @@ var map;
 function initMap() {
     var bounds = new google.maps.LatLngBounds();
    var map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 39.35594, lng: 16.24364},
+        center: {lat: 39.3277733, lng: 16.244146499999943},
        disableDefaultUI: true,
-        zoom: 17,
+        zoom: 13,
        mapTypeId: google.maps.MapTypeId.ROADMAP,
         styles:[
             {
