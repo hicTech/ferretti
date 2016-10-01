@@ -4,6 +4,7 @@ $main_font_size: 16px;
 
 $letter-spacing: 0.2em;
 $letter-spacing-paragraph: 0.15em;
+$letter-spacing-btn: 0.25em;
 
 $main_color: #262626;
 $blue: #002a50;
@@ -20,27 +21,12 @@ body {
   color: $main_color;
 }
 
-.label_button {
-  text-transform: uppercase;
-  font-size: 0.875em;
-  font-weight: 700;
-
-  letter-spacing: $letter-spacing;
-}
-
-.icon_button {
-  font-size: 1.875em;
-  color: $blue;
-}
 
 .label_pappoc {
   color: $light_blue;
   text-transform: uppercase;
 }
 
-.label_button {
-  letter-spacing: $letter-spacing-paragraph;
-}
 
 .hashtag {
   color: $light_blue;
@@ -110,6 +96,10 @@ body {
 
 .font_spacing_paragraph {
   letter-spacing: $letter-spacing-paragraph;
+}
+
+.font_spacing_btn {
+  letter-spacing: $letter-spacing-btn;
 }
 
 .font_spacing {

@@ -11,6 +11,10 @@ $frt_input_2nd_border_thickness: 3px;
 
 .frt_form {
 
+  .frt_title{
+    font-size: 1em !important;
+  }
+
   .frt_form_row {
     margin-bottom: $frt_form_row_vertical_margin;
     .frt_form_label {
@@ -98,25 +102,102 @@ $frt_input_2nd_border_thickness: 3px;
       margin: -2px 0px 0px 50px;
     }
 
+
+
+
+
+
+
+
+
+    &.multiple_check{
+      overflow: auto;
+      padding-top: 7px;
+      clear: both;
+
+      .label_container{
+        float: left;
+        width: 15%;
+        font-size: 1em;
+        height: 100%;
+        line-height: 3.7em;
+      }
+
+      .checks_container{
+        position: relative;
+        width: 85%;
+        float: left;
+
+        font-size: 0.8em;
+        .frt_form_input{
+          background-image: none !important;
+          width: 17% !important;
+          height: 70px;
+          margin: -3px -7px -3px 0px;
+          position: relative;
+
+
+          .frt_input[type="radio"],
+          .frt_input[type="checkbox"]{
+            width: 100% !important;
+            height: 100% !important;
+          }
+
+          .frt_input[type="radio"]:checked,
+          .frt_input[type="checkbox"]:checked{
+            border-color: #000;
+            background-color: #0086ff;
+            z-index: 100;
+          }
+
+
+
+          &:after{
+            content: attr(data-label);
+            text-transform: uppercase;
+            position: absolute;
+            letter-spacing: 0.2em;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            line-height: 63px;
+            text-align: center;
+            pointer-events: none;
+            z-index: 200;
+          }
+
+        }
+      }
+
+      &.five_elements{
+        .label_container{
+          line-height: 1.6em;
+        }
+
+        .checks_container{
+          .frt_form_input{
+            width: 20.3% !important;
+          }
+        }
+      }
+    }
+
+
+    &.half_element{
+      width: 22em;
+      float: left;
+      margin-right: 3em;
+
+      .frt_form_input{
+        .frt_input{
+          width: 20em !important;
+        }
+      }
+    }
+
   }
 
 
 
-
-
-  /*
-              _   _
-   ___  _ __ | |_(_) ___  _ __  ___
-  / _ \| '_ \| __| |/ _ \| '_ \/ __|
- | (_) | |_) | |_| | (_) | | | \__ \
-  \___/| .__/ \__|_|\___/|_| |_|___/
-       |_|
-
-  */
-
-
-  .full_width{
-
-  }
 
 }
