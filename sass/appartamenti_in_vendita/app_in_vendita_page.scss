@@ -1,0 +1,65 @@
+$height_subheader: 3em;
+
+$width_descrizione_appartamenti: 100%;
+$height_descrizione_appartamenti: 37.500em;
+
+$width_caratteristiche_appartamenti:100%;
+$height_caratteristiche_appartamenti:66.125em;
+
+$width_gallery_appartamenti: 100%;
+$height_gallery_appartamenti: 54em;
+
+
+.sub_header{
+  position: relative;
+  height: $height_subheader;
+  width: 100%;
+  z-index: 9999999;
+}
+
+.slider_app_in_vendita{
+  margin-bottom: 3.125em!important;
+}
+
+
+#descrizione_appartamenti{
+  position: relative;
+  width: $width_descrizione_appartamenti;
+  height: $height_descrizione_appartamenti;
+
+  &.section{
+    margin-bottom: $margin_bottom;
+  }
+}
+
+#caratteristiche_appartamenti{
+  position: relative;
+  width: $width_caratteristiche_appartamenti;
+  height: $height_caratteristiche_appartamenti;
+}
+
+
+#gallery_appartamenti{
+  position: relative;
+  width: $width_gallery_appartamenti;
+  height: $height_gallery_appartamenti;
+  &.section{
+    margin-bottom: 3.125em!important;
+  }
+}
+
+#pubblicita_appartamenti{
+  position: relative;
+}
+
+#appuntamento_btn{
+  position: relative;
+  width: 100%;
+  height: 17em;
+}
+
+.immobili_simili{
+  position: relative;
+  width: 100%;
+  height: auto;
+}

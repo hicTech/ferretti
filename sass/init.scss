@@ -40,6 +40,17 @@
 @import "cantieri_in_costruzione/soluzioni_button";
 
 
+/* APPARTAMENTI IN VENDITA PAGE */
+@import "appartamenti_in_vendita/app_in_vendita_page.scss";
+@import "appartamenti_in_vendita/sub_header.scss";
+@import "appartamenti_in_vendita/slider_app_in_vendita.scss";
+@import "appartamenti_in_vendita/descrizione_appartamenti.scss";
+@import "appartamenti_in_vendita/gallery_appartamento.scss";
+@import "appartamenti_in_vendita/pubblicita_appartamenti.scss";
+@import "appartamenti_in_vendita/appuntamento_btn.scss";
+@import "appartamenti_in_vendita/immobili_simili";
+
+
 @import "lib/_normalize";
 @import "frt_modules/frt_button";
 @import "frt_modules/frt_paragraph";

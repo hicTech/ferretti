@@ -1,0 +1,47 @@
+
+
+.gallery_app{
+  .frt_img{
+    width: 58.4%;
+  }
+  .content_bubble_carousel{
+    position: absolute;
+    bottom: 31em;
+    right:7em;
+    width: 34.25em;
+    height: 15.000em;
+    z-index: 2;
+
+    .frt_title{
+      line-height: 1.5em;
+    }
+    .firma{
+      overflow: hidden;
+      margin-top: 0.375em;
+
+      .hyphen{
+        width: 1.700em;
+        height: 0.313em;
+        background-color: black;
+        float: left;
+        margin-top: 0.65em;
+      }
+
+      .name{
+        float: left;
+        margin-left: 0.750em;
+        color: black;
+        text-transform: capitalize;
+      }
+
+
+    }
+  }
+
+  .frt_guarda_pragraph{
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+    z-index: 1;
+  }
+}

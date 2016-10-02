@@ -6,7 +6,7 @@ $frt_mediaObj_collapsed_width: 400px;
 .frt_mediaObject{
   width: $frt_mediaObj_width + ($frt_paragraph_border_thickness * 2);
   float: left;
-  margin: 0px 25px 50px 25px;
+  margin: 0px 20px 50px 20px;
 
   .image_wrapper{
     width: $frt_mediaObj_width;
@@ -79,7 +79,7 @@ $frt_mediaObj_collapsed_width: 400px;
 
   &.collapsed{
     width: $frt_mediaObj_collapsed_width + ($frt_paragraph_border_thickness * 2);
-    margin: 0px 23px 50px 23px;
+    margin: 0px 20px 50px 20px;
 
     .image_wrapper{
       width: $frt_mediaObj_collapsed_width;

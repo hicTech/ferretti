@@ -1,0 +1,14 @@
+
+
+
+.slider_app_in_vendita{
+  .nav_slider_wrapper{
+    @include cols(jus-between);
+
+    .content_arrow{
+      @include cell();
+      width:7.500em;
+    }
+  }
+
+}

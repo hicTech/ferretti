@@ -1,0 +1,63 @@
+$width_container_ancore:34.375em;
+$width_container_price: 18.750em;
+
+.container_sub_header{
+  position: fixed;
+  width: 100%;
+  height: 3em;
+  .sub_header_wrapper {
+    background-color: rgba(0,0,0,0.1);
+    @include cols(jus-between);
+    .container_ancore {
+      @include cell();
+      width: $width_container_ancore;
+
+      .ancore_wrapper{
+        @include cols();
+
+        .ancora_container{
+          @include flex();
+
+
+          .ancora {
+            margin-top: 0px;
+            font-size: 0.7em;
+            cursor: pointer;
+
+            &:hover {
+             @extend .light_blue;
+            }
+          }
+        }
+      }
+
+    }
+    .container_price {
+      @include cell();
+      width: $width_container_price;
+
+      .container_price_wrapper{
+        @include cols();
+
+        .price,.planimetria{
+          @include flex();
+
+          .value_price, .plan{
+            margin-top: 0px;
+            font-size: 0.8em;
+          }
+        }
+        .container_hyphen{
+         @include cell();
+          width:2.188em;
+
+          .hyphen{
+            width: 1.500em;
+            height: 0.313em;
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+$width_descrizione_appartamenti_right: 61.803398874985468379271708299583%;
+$width_descrizione_appartamenti_left: 38.196601125014531620728291700417%;
+
+.container_section {
+  .wrapper_descrizione_appartamenti {
+    @include cols();
+
+    .descrizione_appartamenti_left {
+      @include cell();
+      width: $width_descrizione_appartamenti_left;
+
+      .container_scheda_app {
+        width: 85%;
+        height: 80%;
+
+        .frt_mediaObject {
+          margin:0px 0px;
+
+          .image_wrapper {
+            position: relative;
+            img {
+              height: 100%;
+            }
+          }
+          .frt_paragraph {
+            text-align: center;
+            width: 100%;
+
+            .frt_paragraph_content {
+              padding: 0em 2.5em 0em 2.5em;
+            }
+          }
+        }
+      }
+    }
+    .descrizione_appartamenti_right {
+      @include cell();
+      width: $width_descrizione_appartamenti_right;
+    }
+  }
+}
