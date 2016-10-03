@@ -7,6 +7,9 @@ $height_in_costruzione: auto;
 $width_instagram: 100%;
 $height_instagram:47.125em;
 
+$width_noixvoi: 100%;
+$height_noixvoi: auto;
+
 
 #archivi_top {
   position: relative;
@@ -33,4 +36,9 @@ $height_instagram:47.125em;
   position: relative;
   width: $width_instagram;
   height: $height_instagram;
+}
+#noixvoi{
+  position: relative;
+  width: $width_noixvoi;
+  height: $height_noixvoi;
 }

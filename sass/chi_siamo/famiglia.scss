@@ -1,0 +1,52 @@
+$width_famiglia_left:59%;
+$width_famiglia_right:41%;
+
+
+.wrapper_famiglia{
+  @include cols();
+
+  .famiglia_left{
+    @include cell();
+    width: $width_famiglia_left;
+
+    .container_foto_famiglia{
+      padding: 2.188em 2.188em;
+    }
+
+  }
+  .famiglia_right{
+    @include cell();
+    width: $width_famiglia_right;
+
+
+    .container_text_right{
+      width: 90%;
+
+      .subtitle_right, .title_right{
+        line-height: 1.5em;
+      }
+
+      .frt_text{
+        margin-top: 1.563em;
+      }
+    }
+
+  }
+}
+.container_pappoc_famiglia{
+  position: absolute;
+  left:2.250em;
+  top:2.250em;
+
+  .frt_pappoc{
+    .pappoc_round{
+      .numberCircle{
+        width:1.300em;
+        height: 1.300em;
+        line-height: 1.300em;
+        font-size: 1.5em;
+        background-color: transparent;
+      }
+    }
+  }
+}

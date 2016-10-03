@@ -1,0 +1,67 @@
+$width_storia_left:41%;
+$width_storia_right:59%;
+
+
+.wrapper_storia{
+  @include cols();
+
+  .storia_left{
+    @include cell();
+    width: $width_storia_left;
+
+    .content_bubble_storia{
+      width:90%;
+
+      .container_text{
+        height: 17.750em;
+        .frt_title, .frt_subtitle{
+          letter-spacing: 0.1em;
+        }
+
+        .subtitle_bottom{
+          position: absolute;
+          bottom: 3.063em;
+        }
+        .title_bottom{
+
+          position: absolute;
+          bottom: 1.563em
+        }
+      }
+    }
+  }
+
+  .storia_right{
+    @include cell();
+    width: $width_storia_right;
+
+    .container_text_right{
+      width: 90%;
+
+      .subtitle_right, .title_right{
+        line-height: 1.5em;
+      }
+
+      .frt_text{
+        margin-top: 1.563em;
+      }
+
+    }
+  }
+}
+.container_pappoc_storia{
+  position: absolute;
+  right: 2.813em;
+  top:6.250em;
+
+  .frt_pappoc{
+    .pappoc_round{
+      .numberCircle{
+        width:1.300em;
+        height: 1.300em;
+        line-height: 1.300em;
+        font-size: 1.5em;
+      }
+    }
+  }
+}

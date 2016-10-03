@@ -1,0 +1,33 @@
+
+.container_noixvoi {
+  width: 60%;
+  height: 45%;
+
+  .corner {
+    height: 100%;
+
+    .container_text_noixvoi {
+      width: 80%;
+    }
+
+  }
+}
+.container_button_noixvoi{
+  width:100%;
+  height:6em;
+  position: absolute;
+  bottom:-3.625em;
+
+  .container_button_noixvoi_wrapper{
+    @include cols(jus-center);
+
+    .button_noixvoi {
+      @include cell();
+      width: 17em;
+
+
+
+    }
+
+  }
+}

@@ -1,0 +1,45 @@
+$width_chi_siamo_top: 100%;
+$height_chi_siamo_top: auto;
+
+$width_storia: 100%;
+$height_storia: 37.500em;
+
+$width_instagram: 100%;
+$height_instagram:47.125em;
+
+$width_famiglia: 100%;
+$height_famiglia: 35.750em;
+
+$width_valori: 100%;
+$height_valori: 54.375em;
+
+
+#chi_siamo_top {
+  position: relative;
+  width: $width_chi_siamo_top;
+  height: $height_chi_siamo_top;
+}
+#storia{
+  position:relative;
+  width: $width_storia;
+  height: $height_storia;
+}
+#famiglia{
+  position:relative;
+  width:$width_famiglia;
+  height:$height_famiglia;
+}
+#valori{
+  position:relative;
+  width:$width_valori;
+  height:$height_valori;
+}
+#noixvoi.section{
+  margin-bottom: 7.063em;
+}
+
+#chi_siamo_instagram{
+  position:relative;
+  width: 100%;
+  height: 47.125em;
+}
