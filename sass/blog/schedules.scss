@@ -1,0 +1,31 @@
+
+
+.container_title_bioedilizia, .container_title_cantieri, .container_title_comprare_casa {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index:1;
+
+  .frt_title{
+    font-size: 2.5em;
+  }
+  .frt_text{
+    font-size: 1em;
+  }
+}
+
+.img_bioedilizia, .img_cantieri, .img_comprare_casa{
+  z-index:0;
+
+  .btn_bioedilizia,.btn_cantieri,.btn_comprare_casa{
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: -2.188em;
+  }
+}

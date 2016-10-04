@@ -98,7 +98,7 @@ body {
 }
 
 .font_spacing_paragraph {
-  letter-spacing: $letter-spacing-paragraph;
+  letter-spacing: $letter-spacing-paragraph!important;
 }
 
 .font_spacing_btn {
@@ -135,23 +135,23 @@ body {
 }
 
 .blue {
-  color: $blue;
+  color: $blue!important;
 }
 
 .light_blue {
-  color: $light_blue;
+  color: $light_blue!important;
 }
 
 .dark_grey {
-  color: $dark_grey;
+  color: $dark_grey!important;
 }
 
 .grey {
-  color: $grey;
+  color: $grey!important;
 }
 
 .light_grey {
-  color: $light_grey;
+  color: $light_grey!important;
 }
 
 .white {
