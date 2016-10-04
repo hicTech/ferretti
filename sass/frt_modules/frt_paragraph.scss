@@ -8,6 +8,8 @@ $frt_paragraph_2nd_border_thickness: 5px;
 $frt_paragraph_animation: ease-out;
 $frt_paragraph_animation_time: 0.4s;
 
+$interline_title:1.5em;
+
 
 .frt_paragraph{
 
@@ -94,7 +96,7 @@ $frt_paragraph_animation_time: 0.4s;
   font-size: 1.750em;
   text-transform: uppercase;
   letter-spacing: $letter-spacing;
-  line-height: $interline;
+  line-height: $interline_title;
 }
 
 .frt_title{
@@ -102,7 +104,7 @@ $frt_paragraph_animation_time: 0.4s;
   font-size: 1.750em;
   text-transform: uppercase;
   letter-spacing: $letter-spacing;
-  line-height: $interline;
+  line-height: $interline_title;
 
 }
 
