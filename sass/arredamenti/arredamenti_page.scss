@@ -1,0 +1,73 @@
+$width_arredamenti: 100%;
+$height_arredamenti_top: auto;
+
+$height_par: 21.875em;
+$height_second_par: 15.875em;
+
+$height_galley: 50em;
+
+$width_showroom:100%;
+$height_showroom:34em;
+
+
+
+#arredamenti_top {
+  position: relative;
+  width: $width_arredamenti;
+  height: $height_arredamenti_top;
+}
+
+
+.arredamenti_paragraph{
+  position: relative;
+  width: $width_arredamenti;
+  height: $height_par;
+}
+.second_paragraph{
+  height: $height_second_par;
+}
+
+#arredamenti_gallery{
+  position: relative;
+  width: $width_arredamenti;
+  height: $height_galley;
+}
+
+#preventivo_btn{
+  position: relative;
+  width: 100%;
+  height: 17em;
+}
+#preventivo_btn.section{
+  margin-bottom: 5em;
+}
+
+#marchi{
+  position: relative;
+  width: 100%;
+  height: 11em;
+
+  .container_title{
+    position: relative;
+    top:0em;
+  }
+}
+#marchi.section{
+  margin-bottom: 15em;
+}
+
+#showroom{
+  width: $width_showroom;
+  height: $height_showroom;
+  position: relative;
+}
+#showroom.section{
+  margin-bottom: 10em;
+}
+
+#arredamenti_instagram{
+  position: relative;
+  width: $width_instagram;
+  height: $height_instagram;
+}
+

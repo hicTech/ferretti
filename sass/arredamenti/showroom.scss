@@ -1,0 +1,27 @@
+
+
+.wrapper_showroom{
+  @include cols();
+
+  .showroom_left{
+    @include cell();
+    width:40%;
+
+
+    .title_showroom{
+      padding:1.875em;
+    }
+  }
+  .showroom_right{
+    @include cell();
+    width:60%;
+
+
+  }
+}
+.bubble_showroom{
+  position: absolute;
+  top: 10.938em;
+  left: 3.125em;
+  width: 40%;
+}
