@@ -93,8 +93,14 @@ body {
   font-weight: bold!important;
 }
 
+.font_lowercase {
+  text-transform: lowercase;
+}
 .font_uppercase {
   text-transform: uppercase;
+}
+.font_capitalize {
+  text-transform: capitalize;
 }
 
 .font_spacing_paragraph {

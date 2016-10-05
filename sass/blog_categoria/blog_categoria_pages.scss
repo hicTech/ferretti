@@ -1,0 +1,18 @@
+$width_blog_categoria: 100%;
+$height_blog_categoria_top: auto;
+
+
+#blog_categoria_top {
+  position: relative;
+    width: $width_blog_categoria;
+    height: $height_blog_categoria_top;
+  }
+#blog_categoria_top.section {
+  margin-bottom: 5em;
+}
+
+#blog_categoria_instagram{
+  position: relative;
+  width: $width_instagram;
+  height: $height_instagram;
+}

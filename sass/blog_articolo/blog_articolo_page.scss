@@ -1,0 +1,37 @@
+$width_blog_articolo: 100%;
+$height_blog_articolo_top: auto;
+
+$width_articolo:100%;
+$height_articolo:auto;
+
+#blog_articolo_top {
+  position: relative;
+  width: $width_blog_articolo;
+  height: $height_blog_articolo_top;
+}
+#blog_articolo_top.section {
+  margin-bottom: 5em;
+}
+
+#blog_articolo_instagram{
+  position: relative;
+  width: $width_instagram;
+  height: $height_instagram;
+}
+
+#blog_articolo{
+  position: relative;
+  width: $width_articolo;
+  height: $height_articolo;
+
+  .container_articolo{
+    position: relative;
+    margin:0 auto;
+    width:60%;
+
+  }
+}
+#blog_articolo.section{
+  margin-bottom:4em;
+}
+
